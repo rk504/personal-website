@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -12,8 +11,7 @@ export default function Professional() {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-serif mb-4">Reese Koppel</h1>
           <p className="text-lg text-muted-foreground">
-            Software Engineer & Entrepreneur with expertise in full-stack development, distributed systems, and
-            technical leadership.
+            Builder / Entrepreneur with expertise in product, data analysis, and finance.
           </p>
         </div>
 
