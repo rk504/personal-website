@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Book, Globe } from "lucide-react"
+import { Linkedin, Book, Spade } from "lucide-react"
 
 export function SocialLinks() {
   return (
@@ -20,11 +20,11 @@ export function SocialLinks() {
           rel="noopener noreferrer"
           className="hover:text-gray-300"
         >
-          <Globe size={24} />
+          <Spade size={24} />
           <span className="sr-only">Ace Bridge</span>
         </Link>
         <Link
-          href="https://www.goodreads.com/user/show/your-profile"
+          href="https://reesentlyread.blogspot.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"

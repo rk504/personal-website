@@ -21,3 +21,212 @@
 2. Set up proper ESLint configuration early in project
 3. Use IDE extensions that highlight these issues
 4. Document common issues and their solutions for team reference 
+
+## Directory Structure Implementation
+- **What**: Creating organized image directories in Next.js project
+- **Why**: 
+  1. Maintainable: Clear locations for different image types
+  2. Scalable: Easy to add new image categories
+  3. Organized: Prevents image clutter in public directory
+- **Commands Used**:
+  ```bash
+  mkdir -p public/images/{hero,carousel,portfolio}
+  ```
+- **Directory Purpose**:
+  - `hero/`: High-impact images for main pages
+  - `carousel/`: Images for rotating galleries
+  - `portfolio/`: Project and work-related images
+
+## Naming Conventions:
+- Use kebab-case: `profile-photo.jpg` not `profilePhoto.jpg`
+- Include descriptive context: `hero-city-view.jpg`
+- Consider adding dimensions: `profile-800x600.jpg`
+- Avoid spaces and special characters
+
+## Image File Tips:
+1. Keep original high-res versions backed up separately
+2. Use consistent aspect ratios within categories
+3. Consider creating a README in each directory explaining its purpose
+4. Track image sizes and maintain a size budget 
+
+## Image Optimization Process
+- **What**: Converting images for web performance
+- **Why**:
+  1. Faster page loads
+  2. Lower bandwidth usage
+  3. Better user experience
+  4. Improved SEO rankings
+
+## Image Specifications by Type:
+- **Hero Images**:
+  - Width: 1920px max
+  - Format: JPEG for photos
+  - Quality: 80-85%
+  - Loading: priority
+  - Aspect ratio: 16:9 for hero
+
+## Optimization Tools:
+1. **Sharp (Node.js)**:
+   - Programmatic optimization
+   - Good for automation
+   - Can be integrated into build
+
+2. **ImageOptim/Squoosh**:
+   - GUI-based optimization
+   - Good for manual processing
+   - Easy to use
+
+## Process Steps:
+1. Download original
+2. Backup original
+3. Optimize with tools
+4. Verify quality
+5. Move to correct directory
+6. Update image paths in code
+7. Test in development
+8. Commit changes
+
+## Common Mistakes:
+1. Over-compression
+2. Wrong aspect ratio
+3. Missing alt text
+4. Incorrect file permissions
+5. Not backing up originals 
+
+## Development Environment Setup
+- **What**: Installing necessary tools for development
+- **Why**: 
+  1. Bun is a fast JavaScript runtime and package manager
+  2. Required for running Next.js builds and scripts
+  3. Alternative to npm/yarn with better performance
+
+## Installation Commands:
+- **Bun**:
+  ```bash
+  # macOS/Linux
+  curl -fsSL https://bun.sh/install | bash
+  
+  # Verify installation
+  bun --version
+  ```
+
+## Common Setup Issues:
+1. Missing runtime environments
+2. Path not configured correctly
+3. Permission issues during installation
+4. Shell restart required after installation
+
+## Best Practices:
+1. Always verify installation with version check
+2. Update shell configuration if needed
+3. Document environment requirements
+4. Keep runtimes updated 
+
+## Image Verification Process
+- **What**: Checking if images are properly configured and optimized
+- **Why**:
+  1. Catch issues before deployment
+  2. Ensure proper image loading
+  3. Verify optimization settings
+  4. Check responsive behavior
+
+## Verification Steps:
+1. **File System Check**:
+   ```bash
+   ls -l public/images/hero/
+   # Should show your image with appropriate permissions
+   ```
+
+2. **Local Development Check**:
+   - Run development server
+   - Load page in browser
+   - Check Network tab in DevTools
+   - Verify image dimensions and size
+
+3. **Visual Quality Check**:
+   - Full screen view
+   - Mobile viewport simulation
+   - Different browser testing
+   - Loading behavior verification
+
+## Common Verification Issues:
+1. 404 errors (wrong path)
+2. Broken aspect ratio
+3. Slow loading (file too large)
+4. Blurry images (over-compression)
+5. CORS errors (wrong configuration)
+
+## DevTools Tips:
+1. Use Network tab to check:
+   - Image load time
+   - File size
+   - HTTP status
+   - Cache headers 
+
+## Image 404 Troubleshooting
+- **What**: Handling missing image errors in Next.js
+- **Why**: 
+  1. File path mismatch
+  2. Missing files
+  3. Wrong directory structure
+  4. Case sensitivity issues
+
+## Error Patterns:
+```
+GET /images/hero/profile.jpg 404
+⨯ The requested resource isn't a valid image
+```
+- Indicates:
+  1. File doesn't exist at specified path
+  2. Directory structure might be incorrect
+  3. Filename case mismatch possible
+
+## Verification Chain:
+1. Check directory exists:
+   ```bash
+   ls public/images/hero/
+   ```
+2. Verify file name matches exactly:
+   - Case sensitive
+   - Extension matches
+   - No extra spaces
+3. Check file permissions:
+   ```bash
+   ls -l public/images/hero/profile.jpg
+   ```
+
+## Prevention Steps:
+1. Use consistent naming conventions
+2. Verify files before deployment
+3. Include image assets in version control
+4. Document image requirements 
+
+## Terminal Control Commands
+- **What**: Commands to regain control of terminal prompt
+- **Why**:
+  1. Terminal might be stuck in a process
+  2. Viewing a file or log
+  3. In an interactive program
+  4. In a different shell mode
+
+## Common Exit Commands:
+1. **Ctrl + C**:
+   - Interrupts current process
+   - Most common escape command
+   - Safe to try first
+
+2. **Ctrl + D**:
+   - Signals end of input
+   - Exits current shell
+   - Use carefully as it can close terminal
+
+3. **Program-specific**:
+   - `q`: for less, man pages
+   - `:q`: for vim/vi
+   - `exit`: for nested shells
+
+## Best Practices:
+1. Try Ctrl + C first
+2. Check what program you're in
+3. Save work before forcing exit
+4. Look for program-specific exit commands 

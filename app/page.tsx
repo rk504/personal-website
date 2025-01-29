@@ -13,7 +13,7 @@ export default function Home() {
         <div className="container flex-grow flex flex-col py-12 md:py-24 space-y-12">
           <div className="relative w-full aspect-[16/9]">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LRG_DSC01163.JPG-cJTupFSMZDOdCjLQLJ7eWAEposJ58h.jpeg"
+              src="/images/hero/profile.jpg"
               alt="Reese Koppel in a European city"
               fill
               className="object-cover object-center rounded-lg"
