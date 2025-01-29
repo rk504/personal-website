@@ -15,7 +15,7 @@ export function SocialLinks() {
           <span className="sr-only">LinkedIn</span>
         </Link>
         <Link
-          href="https://www.acebridge.com/"
+          href="https://www.acebridge.org/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
