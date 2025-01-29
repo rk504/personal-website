@@ -1,16 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import { useRouter } from "next/navigation"
 import { ChevronDown } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useEffect } from "react"
 
 export function Header() {
-  const router = useRouter()
-
   const scrollToAbout = () => {
-    // Check if we're on the home page
     if (window.location.pathname === '/') {
       const aboutSection = document.getElementById("about")
       if (aboutSection) {
@@ -24,10 +20,7 @@ export function Header() {
         })
       }
     } else {
-      // If not on home page, navigate with a custom offset
-      // 1 inch = 96 pixels
-      const offset = 96
-      window.location.href = `/#about#offset=${offset}`
+      window.location.href = '/#about'
     }
   }
 

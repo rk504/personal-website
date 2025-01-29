@@ -714,3 +714,44 @@ window.location.href = "/#about"  // Immediate scroll
 2. Using relative paths
 3. Missing leading slash
 4. Incorrect file references
+
+## ESLint Error Resolution
+- **What**: Fixing common ESLint errors in Next.js
+- **Why**:
+  1. Clean code practices
+  2. Build process requirements
+  3. Performance optimization
+  4. Code maintainability
+
+## Common Errors:
+1. **Unused Variables**:
+   ```typescript
+   // Bad
+   import { useRouter } from 'next/navigation'
+   const Component = () => {
+     const router = useRouter() // Error if unused
+   }
+
+   // Good
+   const Component = () => {
+     // Only import and declare what you use
+   }
+   ```
+
+2. **Import Cleanup**:
+   - Remove unused imports
+   - Keep imports alphabetized
+   - Group imports by type
+   - Document necessary imports
+
+## Best Practices:
+1. Regular ESLint checks
+2. Remove unused code
+3. Document necessary exceptions
+4. Use TypeScript properly
+
+## Build Process:
+1. Run `next build` locally first
+2. Fix all ESLint errors
+3. Test after fixes
+4. Document any suppressions
