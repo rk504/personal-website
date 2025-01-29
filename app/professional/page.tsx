@@ -11,7 +11,7 @@ export default function Professional() {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-serif mb-4">Reese Koppel</h1>
           <p className="text-lg text-muted-foreground">
-            Builder / Entrepreneur with expertise in product, data analysis, and finance.
+            Entrepreneur with expertise in product, data analysis, and finance.
           </p>
         </div>
 
