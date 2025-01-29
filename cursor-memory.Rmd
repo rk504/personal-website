@@ -755,3 +755,81 @@ window.location.href = "/#about"  // Immediate scroll
 2. Fix all ESLint errors
 3. Test after fixes
 4. Document any suppressions
+
+## Dynamic Photo Carousel
+- **What**: Auto-loading photos from directory
+- **Why**:
+  1. Maintainable: Just add/remove files
+  2. Scalable: No code changes needed
+  3. DRY: No manual photo list
+  4. Future-proof: Works with any number of photos
+
+## Implementation:
+1. **API Route**:
+   ```typescript
+   // Get photos from directory
+   const files = readdirSync(carouselDir)
+     .filter(file => /\.(jpg|jpeg|png|webp)$/i.test(file))
+   ```
+
+2. **Client Loading**:
+   ```typescript
+   useEffect(() => {
+     fetch('/api/carousel-photos')
+       .then(res => res.json())
+       .then(data => setPhotos(data.photos))
+   }, [])
+   ```
+
+## Best Practices:
+1. Filter for image files only
+2. Handle loading states
+3. Error boundaries for failed loads
+4. Optimize images before serving
+
+## Common Issues:
+1. Missing file extensions
+2. Case sensitivity
+3. Invalid image formats
+4. Directory permissions
+
+## Image Aspect Ratio Handling
+- **What**: Properly displaying images with varying aspect ratios
+- **Why**:
+  1. Prevent image cropping
+  2. Maintain visual quality
+  3. Consistent presentation
+  4. Better user experience
+
+## Implementation:
+1. **Container Setup**:
+   ```typescript
+   <div className="relative max-w-3xl mx-auto">
+     <div className="flex items-center justify-center">
+       <Image
+         width={800}
+         height={600}
+         className="object-contain"
+         style={{ width: 'auto', height: 'auto' }}
+       />
+     </div>
+   </div>
+   ```
+
+2. **Key Properties**:
+   - `object-contain`: Preserves aspect ratio
+   - `width: 'auto'`: Allows natural scaling
+   - `max-h-[600px]`: Prevents oversized images
+   - `priority`: Optimizes loading
+
+## Common Issues:
+1. Image cropping with `object-cover`
+2. Distortion with fixed aspects
+3. Layout shifts during load
+4. Inconsistent sizing
+
+## Best Practices:
+1. Use `object-contain` for varied ratios
+2. Set reasonable max dimensions
+3. Center images in container
+4. Provide proper width/height
