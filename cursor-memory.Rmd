@@ -833,3 +833,33 @@ window.location.href = "/#about"  // Immediate scroll
 2. Set reasonable max dimensions
 3. Center images in container
 4. Provide proper width/height
+
+## Code Cleanup Best Practices
+- **What**: Removing unused code and declarations
+- **Why**:
+  1. Cleaner codebase
+  2. Better build performance
+  3. Fewer ESLint warnings
+  4. Improved maintainability
+
+## Common Cleanup Targets:
+1. **Unused Declarations**:
+   ```typescript
+   // Remove unused declarations
+   declare const UNUSED_CONST: string[] // ❌
+   
+   // Keep only what's used
+   export function Component() { ... } // ✅
+   ```
+
+2. **Dead Code Patterns**:
+   - Unused imports
+   - Commented code blocks
+   - Unused type declarations
+   - Placeholder code
+
+## Best Practices:
+1. Regular code reviews
+2. Run ESLint before commits
+3. Remove rather than comment
+4. Document necessary code

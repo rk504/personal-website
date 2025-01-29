@@ -3,9 +3,6 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-// This will be populated at build time
-declare const CAROUSEL_PHOTOS: string[]
-
 export function PhotoCarousel() {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0)
   const [photos, setPhotos] = useState<string[]>([])
