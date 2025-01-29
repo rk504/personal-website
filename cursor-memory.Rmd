@@ -1,0 +1,23 @@
+# Build Failure Learning Points
+
+## Error Type: Unescaped Entities in JSX
+- **What**: Build failed due to unescaped apostrophes in JSX text content
+- **Why**: React requires special characters to be escaped to prevent XML parsing issues
+- **Where**: Found in text content within JSX components
+- **Learning**: 
+  1. Always review ESLint errors in development before deploying
+  2. Pay attention to special characters in text content
+  3. Consider setting up pre-commit hooks to catch these issues early
+  4. Remember that production builds are often stricter than development
+
+## Debugging Steps:
+1. Read the full error message carefully
+2. Identify the specific files and line numbers
+3. Look for patterns in the errors
+4. Consider both quick fixes and proper long-term solutions
+
+## Prevention Strategies:
+1. Run `next build` locally before deploying
+2. Set up proper ESLint configuration early in project
+3. Use IDE extensions that highlight these issues
+4. Document common issues and their solutions for team reference 
