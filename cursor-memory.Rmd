@@ -230,3 +230,487 @@ GET /images/hero/profile.jpg 404
 2. Check what program you're in
 3. Save work before forcing exit
 4. Look for program-specific exit commands 
+
+## Local Development Setup
+- **What**: Running Next.js application locally
+- **Why**:
+  1. Test changes in real-time
+  2. Debug issues before deployment
+  3. Verify UI/UX changes
+  4. Development environment features
+
+## Launch Commands:
+```bash
+# Install dependencies
+npm install
+# or
+bun install
+
+# Start development server
+npm run dev
+# or
+bun run dev
+```
+
+## Common Local Issues:
+1. Port conflicts (3000 already in use)
+2. Missing dependencies
+3. Environment variables not set
+4. File permission issues
+
+## Development Features:
+1. Hot reloading
+2. Error overlay
+3. Development-specific logging
+4. Source maps for debugging 
+
+## Content Accuracy Best Practices
+- **What**: Maintaining accurate professional information
+- **Why**:
+  1. Professional credibility
+  2. Consistent across platforms
+  3. Clear career progression
+  4. Accurate representation
+
+## Date Formatting:
+1. **Standard Format**:
+   - Use "Month Year - Present" for current positions
+   - Use "Month Year - Month Year" for past positions
+   - Be consistent with month abbreviations
+
+2. **Location Updates**:
+   - Keep location information current
+   - Consider adding remote/hybrid status
+   - Update across all relevant sections
+
+## Content Verification:
+1. Cross-reference with other professional profiles
+2. Regular audits of information
+3. Update all instances when changes occur
+4. Maintain change history 
+
+## UI Typography Best Practices
+- **What**: Improving text readability and hierarchy
+- **Why**:
+  1. Better user experience
+  2. Clear information hierarchy
+  3. Professional presentation
+  4. Improved scannability
+
+## Text Formatting Patterns:
+1. **Spacing**:
+   - Use consistent vertical rhythm (`space-y-4`)
+   - Break long paragraphs for readability
+   - Add extra space after headings (`mb-6`)
+
+2. **Typography**:
+   - Italic for emphasis or personal statements
+   - Smaller text for supplementary info
+   - Consistent text sizes within sections
+   - Natural line breaks at 60-80 characters
+
+## Content Structure:
+1. Hook/Introduction (italic)
+2. Main professional content
+3. Personal touch (italic, smaller)
+4. Clear section transitions
+
+## Common UI Text Issues:
+1. Inconsistent spacing
+2. Too much text without breaks
+3. Lack of visual hierarchy
+4. Poor line length for reading 
+
+## Typography Consistency
+- **What**: Maintaining uniform text styling
+- **Why**:
+  1. Professional appearance
+  2. Better readability
+  3. Reduced cognitive load
+  4. Clean design aesthetic
+
+## Text Style Application:
+1. **Parent-Level Styling**:
+   - Apply common styles at container level
+   - Reduces repetition
+   - Ensures consistency
+   - Easier maintenance
+
+2. **Size Consistency**:
+   - Use same text size for similar content
+   - Maintain hierarchy through other means
+   - Exception only for true hierarchical needs
+
+## Layout Preservation:
+1. Keep beneficial structural elements:
+   - Line breaks for readability
+   - Paragraph spacing
+   - Content grouping
+   - Natural text flow
+
+## Page Layout Consistency
+- **What**: Maintaining consistent layout elements across pages
+- **Why**:
+  1. Better user experience
+  2. Professional appearance
+  3. Consistent navigation
+  4. Brand cohesion
+
+## Layout Components:
+1. **Header**:
+   - Navigation
+   - Branding
+   - Consistent across pages
+
+2. **Main Content**:
+   - Flex container for variable height
+   - Grows to fill space
+   - Consistent padding/margins
+
+3. **Footer (SocialLinks)**:
+   - Stays at bottom
+   - Consistent across pages
+   - Social media presence
+
+## Layout Structure:
+```tsx
+<>
+  <Header />
+  <main className="min-h-screen flex flex-col">
+    <div className="container flex-grow">
+      {/* Page content */}
+    </div>
+    <SocialLinks />
+  </main>
+</>
+```
+
+## Common Layout Issues:
+1. Footer floating mid-page
+2. Inconsistent spacing
+3. Missing components between pages
+4. Responsive layout breaks
+
+## External Links Best Practices
+- **What**: Adding external links to professional experience
+- **Why**:
+  1. Provides credibility
+  2. Offers additional context
+  3. Improves user engagement
+  4. Enhances SEO
+
+## Link Implementation:
+1. **Security**:
+   - Use `target="_blank"`
+   - Add `rel="noopener noreferrer"`
+   - Consider link appearance
+
+2. **Visual Cues**:
+   - External link icon
+   - Hover states
+   - Company logos
+   - Consistent styling
+
+## Logo Management:
+1. Store in public/images/logos
+2. Use consistent dimensions
+3. Optimize for web
+4. Consider dark/light modes
+
+## Common Link Issues:
+1. Missing security attributes
+2. Broken images
+3. Inconsistent styling
+4. Poor mobile experience
+
+## Link Simplification
+- **What**: Streamlining external links in professional content
+- **Why**:
+  1. Reduced complexity
+  2. Faster load times
+  3. Less maintenance
+  4. Consistent appearance
+
+## Visual Indicators:
+1. **External Link Icon**:
+   - Small icon (h-3 w-3)
+   - Consistent placement
+   - Clear visual cue
+   - Hover state feedback
+
+## Best Practices:
+1. Keep links simple and clear
+2. Use consistent styling
+3. Maintain hover states
+4. Ensure mobile-friendly tap targets
+
+## Common Simplification Issues:
+1. Lost context without visuals
+2. Unclear external link indicators
+3. Inconsistent spacing
+4. Poor touch targets on mobile
+
+## Scroll Behavior Implementation
+- **What**: Smooth scrolling to page sections
+- **Why**:
+  1. Better user experience
+  2. Clear navigation feedback
+  3. Accounts for fixed header
+  4. Works across pages
+
+## Scroll Calculation:
+1. **Header Offset**:
+   - Account for fixed header height
+   - Prevent content hiding under header
+   - Use consistent measurements
+
+2. **Position Calculation**:
+   ```js
+   const headerHeight = 80
+   const elementPosition = element.getBoundingClientRect().top
+   const offsetPosition = elementPosition + window.pageYOffset - headerHeight
+   ```
+
+## Common Scroll Issues:
+1. Content hidden under header
+2. Inconsistent scroll position
+3. Jarring transitions
+4. Cross-browser compatibility
+
+## Best Practices:
+1. Use smooth scrolling
+2. Account for fixed elements
+3. Provide fallback navigation
+4. Consider mobile viewports
+
+## Cross-Page Navigation
+- **What**: Consistent navigation behavior across pages
+- **Why**:
+  1. Predictable user experience
+  2. Maintains navigation context
+  3. Prevents user confusion
+  4. Follows single source of truth
+
+## Navigation Logic:
+1. **Path Detection**:
+   ```js
+   if (window.location.pathname === '/') {
+     // Handle same-page scroll
+   } else {
+     // Handle cross-page navigation
+   }
+   ```
+
+2. **Redirect Strategy**:
+   - Use hash fragments for scroll targets
+   - Maintain consistent section IDs
+   - Handle both local and remote scrolling
+
+## Common Navigation Issues:
+1. Inconsistent behavior
+2. Lost scroll position
+3. Multiple scroll targets
+4. Race conditions
+
+## Best Practices:
+1. Check current path
+2. Use consistent IDs
+3. Handle edge cases
+4. Provide visual feedback
+
+## Hash Navigation Behavior
+- **What**: Direct hash navigation vs client-side routing
+- **Why**:
+  1. Browser handles hash scrolling natively
+  2. Avoids two-step navigation
+  3. More predictable behavior
+  4. Works across page loads
+
+## Implementation Differences:
+```typescript
+// Two-step navigation (avoid)
+router.push("/#about")  // Requires second interaction
+
+// Direct hash navigation (preferred)
+window.location.href = "/#about"  // Immediate scroll
+```
+
+## Browser Behavior:
+1. Hash in URL triggers automatic scroll
+2. Respects header offset naturally
+3. Works on initial page load
+4. Consistent across browsers
+
+## Common Pitfalls:
+1. Router navigation resets scroll
+2. Multiple navigation events
+3. Race conditions with page load
+4. Inconsistent scroll timing
+
+## Scroll Offset Management
+- **What**: Customizing scroll positions across pages
+- **Why**:
+  1. Better content visibility
+  2. Improved user experience
+  3. Consistent viewing position
+  4. Accounts for different layouts
+
+## Implementation:
+1. **Offset Calculation**:
+   ```typescript
+   // Convert inches to pixels
+   const inchesToPixels = (inches) => inches * 96
+   const offset = inchesToPixels(6)
+   ```
+
+2. **Hash Parameters**:
+   - Pass offset in URL hash
+   - Parse on page load
+   - Apply custom scroll position
+
+## Common Issues:
+1. Different screen resolutions
+2. Mobile vs desktop differences
+3. Race conditions with page load
+4. Browser scroll behavior variations
+
+## Best Practices:
+1. Use standard pixel conversions
+2. Handle missing parameters
+3. Smooth scroll transitions
+4. Test across devices
+
+## Precise Scroll Positioning
+- **What**: Fine-tuning scroll positions
+- **Why**:
+  1. Exact content placement
+  2. Consistent viewing experience
+  3. Accounts for visual hierarchy
+  4. Professional presentation
+
+## Measurement Standards:
+1. **Pixel Conversion**:
+   ```typescript
+   // Standard screen measurements
+   const PIXELS_PER_INCH = 96
+   const offset = PIXELS_PER_INCH * 1  // 1 inch
+   ```
+
+2. **Visual Spacing**:
+   - Header height: 80px
+   - 1 inch offset: 96px
+   - Total offset: ~176px
+
+## Considerations:
+1. Screen DPI variations
+2. Device-specific rendering
+3. Viewport height impact
+4. Content flow effects
+
+## Best Practices:
+1. Use standard conversions
+2. Test on multiple devices
+3. Consider responsive design
+4. Document measurement decisions
+
+## Page Metadata Management
+- **What**: Setting document metadata in Next.js
+- **Why**:
+  1. Browser tab identification
+  2. SEO optimization
+  3. Social sharing preview
+  4. Accessibility
+
+## Implementation:
+1. **Basic Metadata**:
+   ```typescript
+   export const metadata: Metadata = {
+     title: "Reese Koppel",
+     description: "..."
+   }
+   ```
+
+2. **Location**:
+   - Root layout for site-wide defaults
+   - Page-specific layouts for overrides
+   - Dynamic metadata for content-based titles
+
+## Best Practices:
+1. Keep titles concise
+2. Include descriptive metadata
+3. Consider SEO keywords
+4. Test social sharing previews
+
+## Common Issues:
+1. Missing metadata
+2. Inconsistent titles
+3. Poor SEO optimization
+4. Invalid metadata format
+
+## Favicon Implementation
+- **What**: Setting up website icons in Next.js
+- **Why**:
+  1. Brand recognition
+  2. Browser tab identification
+  3. Bookmark visuals
+  4. Mobile app icons
+
+## File Requirements:
+1. **Basic Icons**:
+   ```text
+   public/
+     favicon.ico     (16x16, 32x32)
+     icon.png       (32x32)
+     apple-touch-icon.png (180x180)
+   ```
+
+2. **Metadata Config**:
+   ```typescript
+   icons: {
+     icon: [
+       { url: "/favicon.ico", sizes: "any" },
+       { url: "/icon.png", type: "image/png" }
+     ],
+     apple: { url: "/apple-touch-icon.png" }
+   }
+   ```
+
+## Best Practices:
+1. Provide multiple sizes
+2. Include fallback formats
+3. Test across browsers
+4. Optimize file sizes
+
+## Public Directory Path Resolution
+- **What**: Correct path references for public assets in Next.js
+- **Why**:
+  1. Next.js serves public directory at root
+  2. Avoid path resolution issues
+  3. Consistent asset access
+  4. Browser-friendly URLs
+
+## Path Patterns:
+1. **Correct**:
+   ```typescript
+   // Files in public directory
+   url: "/images/favicon/favicon.ico"  // Starts from root
+   ```
+
+2. **Incorrect**:
+   ```typescript
+   // Don't include 'public' in path
+   url: "../public/images/favicon/favicon.ico"  // Wrong
+   url: "public/images/favicon/favicon.ico"     // Wrong
+   ```
+
+## Best Practices:
+1. Always start paths with /
+2. Omit 'public' from path
+3. Use consistent path structure
+4. Test asset loading
+
+## Common Issues:
+1. Including 'public' in path
+2. Using relative paths
+3. Missing leading slash
+4. Incorrect file references

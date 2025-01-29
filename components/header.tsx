@@ -4,18 +4,50 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { ChevronDown } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { useEffect } from "react"
 
 export function Header() {
   const router = useRouter()
 
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about")
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" })
+    // Check if we're on the home page
+    if (window.location.pathname === '/') {
+      const aboutSection = document.getElementById("about")
+      if (aboutSection) {
+        const headerHeight = 80
+        const elementPosition = aboutSection.getBoundingClientRect().top
+        const offsetPosition = elementPosition + window.pageYOffset - headerHeight
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        })
+      }
     } else {
-      router.push("/#about")
+      // If not on home page, navigate with a custom offset
+      // 1 inch = 96 pixels
+      const offset = 96
+      window.location.href = `/#about#offset=${offset}`
     }
   }
+
+  // Add this at the top of the component to handle the offset on load
+  useEffect(() => {
+    if (window.location.hash.includes('offset=')) {
+      const offset = parseInt(window.location.hash.split('offset=')[1])
+      const aboutSection = document.getElementById("about")
+      if (aboutSection) {
+        const headerHeight = 80
+        const elementPosition = aboutSection.getBoundingClientRect().top
+        const offsetPosition = elementPosition + window.pageYOffset - headerHeight - offset
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        })
+      }
+    }
+  }, [])
 
   const openEmailDraft = () => {
     window.location.href = "mailto:me@reesekoppel.com?subject=Contact from Website"

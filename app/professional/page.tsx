@@ -1,147 +1,210 @@
 import { Header } from "@/components/header"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Building2, GraduationCap, Trophy, Briefcase } from "lucide-react"
+import { Building2, GraduationCap, Briefcase, ExternalLink } from "lucide-react"
+import { SocialLinks } from "@/components/social-links"
+import Link from "next/link"
 
 export default function Professional() {
   return (
     <>
       <Header />
-      <main className="container py-24 space-y-8">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl font-serif mb-4">Reese Koppel</h1>
-          <p className="text-lg text-muted-foreground">
-            Entrepreneur with expertise in product, data analysis, and finance.
-          </p>
-        </div>
+      <main className="min-h-screen flex flex-col">
+        <div className="container flex-grow flex flex-col py-24 space-y-8">
+          <div className="max-w-2xl" id="about">
+            <h1 className="text-4xl font-serif mb-6">Reese Koppel</h1>
+            
+            <div className="space-y-4 text-lg text-muted-foreground italic">
+              <p>
+                I love data. Whether with Excel and SQL analyses or R and Power BI visualizations, I let the numbers talk. I'm looking for data and product roles on fast-moving teams that encourage curiosity and learning. 
+              </p>
 
-        <section className="space-y-6">
-          <h2 className="text-2xl font-serif flex items-center gap-2">
-            <Building2 className="h-6 w-6" />
-            Experience
-          </h2>
+              <p>
+                
+                At Partners Capital, I honed my analytical and communication skills on a tight-knit team of ten. 
+                My background is in Cognitive Science and Data Science, but I'm always learning—these days, that includes 
+                full-stack development to build and test ideas.
+              </p>
 
-          <div className="grid gap-6">
+              <p>
+                I also bring an entrepreneurial mindset. As the founder of Ace Bridge, I learned how to identify 
+                customer needs and build something from the ground up. As a product manager at Tricky Bridge, 
+                I increased retention by pinpointing user issues.
+              </p>
+
+              <p>
+                Outside of work, I'm usually playing bridge, reading biographies, or (unfortunately) getting my 
+                hopes up about the Pelicans and Saints.
+              </p>
+            </div>
+          </div>
+
+          <section className="space-y-6">
+            <h2 className="text-2xl font-serif flex items-center gap-2">
+              <Building2 className="h-6 w-6" />
+              Experience
+            </h2>
+
+            <div className="grid gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex justify-between items-start">
+                    <div>
+                      <span className="text-xl font-semibold">Investment Analyst</span>
+                      <p className="text-sm text-muted-foreground">
+                        <Link 
+                          href="https://truenorthinstitute.com/resource/clean-hydrogen-investment-framework/"
+                          className="hover:text-primary flex items-center gap-1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Partners Capital
+                          <ExternalLink className="h-3 w-3" />
+                        </Link>
+                      </p>
+                    </div>
+                    <Badge>July 2023 - January 2025</Badge>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <ul className="list-disc pl-4 space-y-1">
+                    <li>Secured a $110M top-up for an existing client, the largest of 2024, by developing a customized illiquid commitment model that optimized portfolio risk-return balance tailored to the client's liquidity constraints.</li>
+                    <li>Won the office's first new client in two years ($200M) by leading pitch development, creating 38% of the materials, and driving the client onboarding process.</li>
+                    <li>Increased efficiency by implementing SharePoint as the office's central hub, saving the team 10+ hours per week.</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Badge variant="secondary">Analytical Skills</Badge>
+                    <Badge variant="secondary">Financial Modeling</Badge>
+                    <Badge variant="secondary">Due Diligence</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex justify-between items-start">
+                    <div>
+                      <span className="text-xl font-semibold">Founder, CEO</span>
+                      <p className="text-sm text-muted-foreground">
+                        <Link 
+                          href="https://www.acebridge.org/"
+                          className="hover:text-primary flex items-center gap-1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Ace Bridge
+                          <ExternalLink className="h-3 w-3" />
+                        </Link>
+                      </p>
+                    </div>
+                    <Badge>March 2020 - July 2023</Badge>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <ul className="list-disc pl-4 space-y-1">
+                    <li>Built a tutoring business with $3,000 in monthly recurring revenue by managing 90 client relationships and six contractors.</li>
+                    <li>Produced 5+ YouTube tutorials, boosting visibility and securing 18 glowing customer testimonials.</li>
+                    <li>Managed finances while teaching bridge lessons, learning to prioritize customer needs and explain complicated concepts.</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Badge variant="secondary">Business Development</Badge>
+                    <Badge variant="secondary">Content Creation</Badge>
+                    <Badge variant="secondary">Customer Relations</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex justify-between items-start">
+                    <div>
+                      <span className="text-xl font-semibold">Product Intern</span>
+                      <p className="text-sm text-muted-foreground">
+                        <Link 
+                          href="https://www.trickybridge.com/"
+                          className="hover:text-primary flex items-center gap-1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Forklift Studios, Tricky Bridge
+                          <ExternalLink className="h-3 w-3" />
+                        </Link>
+                      </p>
+                    </div>
+                    <Badge>June 2020 - September 2021</Badge>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <ul className="list-disc pl-4 space-y-1">
+                    <li>Co-led product management for Tricky Bridge, an iOS app recognized as Apple's #1 "Indie Games We Love" at launch, achieving 1M downloads and 4M lesson targets.</li>
+                    <li>Improved user retention by 20% through data-driven insights derived from Amplitude cohort analyses and actionable roadmap updates.</li>
+                    <li>Enhanced app quality through rigorous UX reviews, recommending key improvements to the AI play engine, and prioritizing development goals.</li>
+                    <li>Produced video content that grew the app's YouTube channel to 1,000+ subscribers, amplifying engagement and broadening its audience reach.</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Badge variant="secondary">Product Management</Badge>
+                    <Badge variant="secondary">Analytics</Badge>
+                    <Badge variant="secondary">UX Research</Badge>
+                    <Badge variant="secondary">Content Strategy</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          <section className="space-y-6">
+            <h2 className="text-2xl font-serif flex items-center gap-2">
+              <GraduationCap className="h-6 w-6" />
+              Education
+            </h2>
+
             <Card>
               <CardHeader>
                 <CardTitle className="flex justify-between items-start">
                   <div>
-                    <span className="text-xl font-semibold">Software Engineer</span>
-                    <p className="text-sm text-muted-foreground">Avalanche VC</p>
+                    <span className="text-xl font-semibold">Yale University</span>
+                    <p className="text-sm text-muted-foreground">B.S. Cognitive Science, Data Science Certificate</p>
                   </div>
-                  <Badge>2023 - Present</Badge>
+                  <Badge>May 2023</Badge>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-2">
-                <p>Leading technical initiatives and development of internal tools.</p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">TypeScript</Badge>
-                  <Badge variant="secondary">React</Badge>
-                  <Badge variant="secondary">Node.js</Badge>
-                  <Badge variant="secondary">AWS</Badge>
-                </div>
+              <CardContent>
+                <p>Activities: Bridge Club (Founder), Entrepreneurial Society, Chess Club</p>
               </CardContent>
             </Card>
+          </section>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex justify-between items-start">
-                  <div>
-                    <span className="text-xl font-semibold">Software Engineer</span>
-                    <p className="text-sm text-muted-foreground">Meta</p>
-                  </div>
-                  <Badge>2022 - 2023</Badge>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <p>Worked on distributed systems and infrastructure for Facebook's messaging platform.</p>
+          <section className="space-y-6">
+            <h2 className="text-2xl font-serif flex items-center gap-2">
+              <Briefcase className="h-6 w-6" />
+              Skills
+            </h2>
+
+            <div className="grid gap-4">
+              <div>
+                <h3 className="font-medium mb-2">Technical</h3>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">C++</Badge>
+                  <Badge variant="secondary">SQL</Badge>
                   <Badge variant="secondary">Python</Badge>
-                  <Badge variant="secondary">Distributed Systems</Badge>
+                  <Badge variant="secondary">TypeScript</Badge>
+                  <Badge variant="secondary">R</Badge>
+                  <Badge variant="secondary">Excel</Badge>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+              </div>
 
-        <section className="space-y-6">
-          <h2 className="text-2xl font-serif flex items-center gap-2">
-            <GraduationCap className="h-6 w-6" />
-            Education
-          </h2>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex justify-between items-start">
-                <div>
-                  <span className="text-xl font-semibold">Yale University</span>
-                  <p className="text-sm text-muted-foreground">B.S. Computer Science</p>
-                </div>
-                <Badge>2018 - 2022</Badge>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Focused on distributed systems and software engineering.</p>
-            </CardContent>
-          </Card>
-        </section>
-
-        <section className="space-y-6">
-          <h2 className="text-2xl font-serif flex items-center gap-2">
-            <Trophy className="h-6 w-6" />
-            Projects & Achievements
-          </h2>
-
-          <div className="grid gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>
-                  <span className="text-xl font-semibold">Technical Leadership</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <p>Led development of multiple successful projects and mentored junior engineers.</p>
+              <div>
+                <h3 className="font-medium mb-2">Business</h3>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Team Leadership</Badge>
-                  <Badge variant="secondary">Project Management</Badge>
-                  <Badge variant="secondary">Mentoring</Badge>
+                  <Badge variant="secondary">Product Management</Badge>
+                  <Badge variant="secondary">Data Analytics</Badge>
+                  <Badge variant="secondary">Financial Analysis</Badge>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        <section className="space-y-6">
-          <h2 className="text-2xl font-serif flex items-center gap-2">
-            <Briefcase className="h-6 w-6" />
-            Skills
-          </h2>
-
-          <div className="grid gap-4">
-            <div>
-              <h3 className="font-medium mb-2">Programming Languages</h3>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">TypeScript</Badge>
-                <Badge variant="secondary">Python</Badge>
-                <Badge variant="secondary">C++</Badge>
-                <Badge variant="secondary">Java</Badge>
-                <Badge variant="secondary">SQL</Badge>
               </div>
             </div>
-
-            <div>
-              <h3 className="font-medium mb-2">Technologies</h3>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">React</Badge>
-                <Badge variant="secondary">Node.js</Badge>
-                <Badge variant="secondary">AWS</Badge>
-                <Badge variant="secondary">Docker</Badge>
-                <Badge variant="secondary">Git</Badge>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
+        
+        <SocialLinks />
       </main>
     </>
   )
