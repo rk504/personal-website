@@ -19,7 +19,7 @@ export function Header() {
   }
 
   const openEmailDraft = () => {
-    window.location.href = "mailto:me@reesekoppel.com,rkoppel2@gmail.com?subject=Contact from Website"
+    window.location.href = "mailto:me@reesekoppel.com?subject=Contact from Website"
   }
 
   return (
