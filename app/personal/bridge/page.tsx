@@ -7,8 +7,8 @@ export default function Bridge() {
   return (
     <>
       <Header />
-      <main className="min-h-screen flex flex-col py-12 pt-24">
-        <div className="container flex-grow space-y-12 pb-12">
+      <main className="min-h-screen flex flex-col">
+        <div className="container flex-grow flex flex-col py-24 space-y-8">
           <h1 className="text-4xl font-serif text-center mb-4">Bridge</h1>
 
           <section>
