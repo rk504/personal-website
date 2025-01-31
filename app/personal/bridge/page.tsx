@@ -9,10 +9,10 @@ export default function Bridge() {
       <Header />
       <main className="min-h-screen flex flex-col py-12 pt-24 pb-24">
         <div className="container flex-grow space-y-12">
-          <h1 className="text-4xl font-serif text-center mb-8">Bridge</h1>
+          <h1 className="text-4xl font-serif text-center mb-4">Bridge</h1>
 
           <section>
-            <h2 className="text-2xl font-semibold">Media</h2>
+            <h2 className="text-2xl font-semibold mb-2">Media</h2>
             <ul className="space-y-4">
               <li>
                 <Card>
@@ -60,7 +60,7 @@ export default function Bridge() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Projects</h2>
+            <h2 className="text-2xl font-semibold mb-2">Projects</h2>
             <ul className="space-y-4">
               <li>
                 <Card>

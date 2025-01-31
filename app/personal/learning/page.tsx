@@ -9,10 +9,10 @@ export default function Learning() {
       <Header />
       <main className="min-h-screen flex flex-col py-12 pt-24 pb-24">
         <div className="container flex-grow space-y-12">
-          <h1 className="text-4xl font-serif text-center mb-8">Learning</h1>
+          <h1 className="text-4xl font-serif text-center mb-4">Learning</h1>
 
           <section>
-            <h2 className="text-2xl font-semibold">Reading</h2>
+            <h2 className="text-2xl font-semibold mb-2">Reading</h2>
             <ul className="space-y-4">
               <li>
                 <Card>
