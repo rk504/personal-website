@@ -12,7 +12,7 @@ export default function Professional() {
       <main className="min-h-screen flex flex-col">
         <div className="container flex-grow flex flex-col py-24 space-y-8">
           <div className="max-w-2xl" id="about">
-            <h1 className="text-4xl font-serif mb-6">Reese Koppel</h1>
+            <h1 className="text-4xl font-serif mb-6">Professional</h1>
             
             <div className="space-y-4 text-lg text-muted-foreground italic">
               <p>
