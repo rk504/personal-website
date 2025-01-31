@@ -100,7 +100,21 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Bridge education and resources.</p>
+                    <p>The bridge tutoring company I started over COVID.</p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://www.youtube.com/channel/UCGpqgSoiMqMyhWcXxg-yHZA" target="_blank" rel="noopener noreferrer">
+                        Ace Bridge YouTube Channel<Spade className="inline h-4 w-4" />
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Some videos I made during COVID.</p>
                   </CardContent>
                 </Card>
               </li>

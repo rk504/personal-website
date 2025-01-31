@@ -25,7 +25,7 @@ export default function Home() {
                 className="bg-white/80 backdrop-blur-sm border-white text-black hover:bg-white hover:text-black transition-colors"
                 asChild
               >
-                <Link href="/personal">PERSONAL</Link>
+                <Link href="/personal/projects">PERSONAL</Link>
               </Button>
               <Button
                 variant="outline"
