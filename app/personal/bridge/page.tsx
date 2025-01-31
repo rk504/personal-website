@@ -7,12 +7,12 @@ export default function Bridge() {
   return (
     <>
       <Header />
-      <main className="min-h-screen flex flex-col py-12">
+      <main className="min-h-screen flex flex-col py-12 pt-24 pb-24">
         <div className="container flex-grow space-y-12">
-          <h1 className="text-4xl font-serif text-center">BRIDGE</h1>
+          <h1 className="text-4xl font-serif text-center mb-8">Bridge</h1>
 
           <section>
-            <h2 className="text-2xl font-semibold">MEDIA</h2>
+            <h2 className="text-2xl font-semibold">Media</h2>
             <ul className="space-y-4">
               <li>
                 <Card>
@@ -60,7 +60,7 @@ export default function Bridge() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">PROJECTS</h2>
+            <h2 className="text-2xl font-semibold">Projects</h2>
             <ul className="space-y-4">
               <li>
                 <Card>
@@ -72,7 +72,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Learn and play bridge through this app.</p>
+                    <p>This app is the simplest and most fun way to learn bridge.</p>
                   </CardContent>
                 </Card>
               </li>
@@ -108,7 +108,7 @@ export default function Bridge() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">EDUCATIONAL ORGANIZATIONS</h2>
+            <h2 className="text-2xl font-semibold">Educational Organizations</h2>
             <ul className="space-y-4">
               <li>
                 <Card>
@@ -134,7 +134,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Resources for bridge education.</p>
+                    <p>Helping Bay Area kids learn bridge.</p>
                   </CardContent>
                 </Card>
               </li>

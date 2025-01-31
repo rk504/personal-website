@@ -40,8 +40,8 @@ export default function Home() {
           <div id="about" className="space-y-4 max-w-2xl mx-auto text-center">
             <h1 className="text-4xl font-serif">Hello and Welcome</h1>
             <p className="text-lg text-muted-foreground">
-              I'm Reese Koppel, an entrepreneur passionate about building innovative solutions to help our isolated world feel more connected. I'm currently based in NYC, but I love
-              exploring the world. TEST TEST TEST
+              I'm Reese Koppel, an entrepreneur passionate about building tools to help make our isolated world more connected. I'm currently based in NYC, but I love
+              to travel. Welcome to my site.
             </p>
           </div>
         </div>

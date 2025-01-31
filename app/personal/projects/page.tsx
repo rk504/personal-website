@@ -1,25 +1,25 @@
 import { Header } from "@/components/header"
 import { SocialLinks } from "@/components/social-links"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ExternalLink, Globe, Music, Bot } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 
 export default function Projects() {
   return (
     <>
       <Header />
-      <main className="min-h-screen flex flex-col py-12 pt-24">
+      <main className="min-h-screen flex flex-col py-12 pt-24 pb-24">
         <div className="container flex-grow space-y-12">
-          <h1 className="text-4xl font-serif text-center">PROJECTS</h1>
+          <h1 className="text-4xl font-serif text-center mb-8">Projects</h1>
 
           <section>
-            <h2 className="text-2xl font-semibold">TECHNICAL</h2>
+            <h2 className="text-2xl font-semibold">Technical</h2>
             <ul className="space-y-4">
               <li>
                 <Card>
                   <CardHeader>
                     <CardTitle>
                       <a href="https://easyvol.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        EasyVol <Globe className="inline h-4 w-4" />
+                        EasyVol <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -33,7 +33,7 @@ export default function Projects() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://github.com/rk504" target="_blank" rel="noopener noreferrer">
-                        Github <Bot className="inline h-4 w-4" />
+                        Github <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -60,7 +60,7 @@ export default function Projects() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">CREATIVE</h2>
+            <h2 className="text-2xl font-semibold">Creative</h2>
             <ul className="space-y-4">
               <li>
                 <Card>
@@ -81,7 +81,7 @@ export default function Projects() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://open.spotify.com/show/7lZeZrEoBKmlsjUAe8qTh8" target="_blank" rel="noopener noreferrer">
-                        Read Receipts <Music className="inline h-4 w-4" />
+                        Read Receipts <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
