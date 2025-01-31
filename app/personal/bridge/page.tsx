@@ -72,7 +72,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>This app is the simplest and most fun way to learn bridge.</p>
+                    <p>This app is the best way to learn bridge.</p>
                   </CardContent>
                 </Card>
               </li>
