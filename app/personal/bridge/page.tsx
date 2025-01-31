@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { SocialLinks } from "@/components/social-links"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { ExternalLink, Spade } from "lucide-react"
 
 export default function Bridge() {
   return (
@@ -18,7 +19,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="http://youth.worldbridge.org/acbl-koppels-kingdom-by-sue-munday/" target="_blank" rel="noopener noreferrer">
-                        King of Bridge Award
+                        King of Bridge Award <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -32,7 +33,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.nytimes.com/2020/10/30/sports/online-bridge-championship-bob-hamman.html" target="_blank" rel="noopener noreferrer">
-                        ‘It’s Like Playing With Kobe’: An Unlikely Intergenerational Bridge Team
+                        ‘It’s Like Playing With Kobe’: An Unlikely Intergenerational Bridge Team <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -46,7 +47,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.listennotes.com/podcasts/the-setting-trick/27-scott-hoffer-worlds-best-zE31DYBaiyr/?t=3046" target="_blank" rel="noopener noreferrer">
-                        The Setting Trick Podcast
+                        The Setting Trick Podcast <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -66,7 +67,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.trickybridge.com/" target="_blank" rel="noopener noreferrer">
-                        Tricky Bridge
+                        Tricky Bridge <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -80,7 +81,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://apps.apple.com/us/app/tricky-bridge-learn-play/id1437652160?platform=iphone" target="_blank" rel="noopener noreferrer">
-                        Tricky Bridge App Store Link
+                        Tricky Bridge App Store Link <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -94,7 +95,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.acebridge.org/" target="_blank" rel="noopener noreferrer">
-                        Ace Bridge
+                        Ace Bridge <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -114,7 +115,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.acbleducationalfoundation.org/" target="_blank" rel="noopener noreferrer">
-                        Ed Foundation
+                        Ed Foundation <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -128,7 +129,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.center4bridge.com/" target="_blank" rel="noopener noreferrer">
-                        Center for Bridge Education
+                        Center for Bridge Education <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>

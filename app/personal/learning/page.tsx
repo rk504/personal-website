@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { SocialLinks } from "@/components/social-links"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { ExternalLink } from "lucide-react"
 
 export default function Learning() {
   return (
@@ -18,7 +19,7 @@ export default function Learning() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.goodreads.com/user/show/79282113-reese" target="_blank" rel="noopener noreferrer">
-                        Goodreads
+                        Goodreads <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -32,7 +33,7 @@ export default function Learning() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://reesentlyread.blogspot.com/" target="_blank" rel="noopener noreferrer">
-                        The Covers of the Books I've Read
+                        The Covers of the Books I've Read <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
@@ -46,7 +47,7 @@ export default function Learning() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://x.com/howwethinkbooks" target="_blank" rel="noopener noreferrer">
-                        How We Think Books
+                        How We Think Books <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
