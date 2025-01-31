@@ -1,0 +1,147 @@
+import { Header } from "@/components/header"
+import { SocialLinks } from "@/components/social-links"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+export default function Bridge() {
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen flex flex-col py-12">
+        <div className="container flex-grow space-y-12">
+          <h1 className="text-4xl font-serif text-center">BRIDGE</h1>
+
+          <section>
+            <h2 className="text-2xl font-semibold">MEDIA</h2>
+            <ul className="space-y-4">
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="http://youth.worldbridge.org/acbl-koppels-kingdom-by-sue-munday/" target="_blank" rel="noopener noreferrer">
+                        King of Bridge Award
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Recognized for excellence in bridge.</p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://www.nytimes.com/2020/10/30/sports/online-bridge-championship-bob-hamman.html" target="_blank" rel="noopener noreferrer">
+                        ‘It’s Like Playing With Kobe’: An Unlikely Intergenerational Bridge Team
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Featured in The New York Times.</p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://www.listennotes.com/podcasts/the-setting-trick/27-scott-hoffer-worlds-best-zE31DYBaiyr/?t=3046" target="_blank" rel="noopener noreferrer">
+                        The Setting Trick Podcast
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Discussing bridge strategies and insights.</p>
+                  </CardContent>
+                </Card>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold">PROJECTS</h2>
+            <ul className="space-y-4">
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://www.trickybridge.com/" target="_blank" rel="noopener noreferrer">
+                        Tricky Bridge
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Learn and play bridge through this app.</p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://apps.apple.com/us/app/tricky-bridge-learn-play/id1437652160?platform=iphone" target="_blank" rel="noopener noreferrer">
+                        Tricky Bridge App Store Link
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Download the app on the App Store.</p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://www.acebridge.org/" target="_blank" rel="noopener noreferrer">
+                        Ace Bridge
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Bridge education and resources.</p>
+                  </CardContent>
+                </Card>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold">EDUCATIONAL ORGANIZATIONS</h2>
+            <ul className="space-y-4">
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://www.acbleducationalfoundation.org/" target="_blank" rel="noopener noreferrer">
+                        Ed Foundation
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Supporting bridge education initiatives.</p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://www.center4bridge.com/" target="_blank" rel="noopener noreferrer">
+                        Center for Bridge Education
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Resources for bridge education.</p>
+                  </CardContent>
+                </Card>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <SocialLinks />
+      </main>
+    </>
+  )
+}
