@@ -100,7 +100,7 @@ export function Header() {
               onClick={openEmailDraft}
               className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
             >
-              Contact
+              Email Me
             </button>
           </nav>
           <button

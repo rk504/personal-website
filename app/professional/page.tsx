@@ -182,7 +182,7 @@ export default function Professional() {
 
             <div className="grid gap-4">
               <div>
-                <h3 className="font-medium mb-2">Technical</h3>
+                <h3 className="font-medium mb-2">Technical Tools</h3>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">SQL</Badge>
                   <Badge variant="secondary">Python</Badge>
@@ -193,7 +193,7 @@ export default function Professional() {
               </div>
 
               <div>
-                <h3 className="font-medium mb-2">Business</h3>
+                <h3 className="font-medium mb-2">Technical Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Product Management</Badge>
                   <Badge variant="secondary">Data Analytics</Badge>
