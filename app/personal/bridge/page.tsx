@@ -8,7 +8,7 @@ export default function Bridge() {
     <>
       <Header />
       <main className="min-h-screen flex flex-col py-12 pt-24">
-        <div className="container flex-grow space-y-12 pb-24">
+        <div className="container flex-grow space-y-12 pb-12">
           <h1 className="text-4xl font-serif text-center mb-4">Bridge</h1>
 
           <section>
@@ -134,7 +134,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Helping Bay Area kids learn bridge.</p>
+                    <p>Teaching Bay Area kids bridge.</p>
                   </CardContent>
                 </Card>
               </li>
