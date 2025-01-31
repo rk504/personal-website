@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Book, Spade } from "lucide-react"
+import { Linkedin, BookOpen, Spade } from "lucide-react"
 
 export function SocialLinks() {
   return (
@@ -24,13 +24,13 @@ export function SocialLinks() {
           <span className="sr-only">Ace Bridge</span>
         </Link>
         <Link
-          href="https://reesentlyread.blogspot.com/"
+          href="https://reesekoppel.substack.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
         >
-          <Book size={24} />
-          <span className="sr-only">Goodreads</span>
+          <BookOpen size={24} />
+          <span className="sr-only">Substack</span>
         </Link>
       </div>
     </footer>
