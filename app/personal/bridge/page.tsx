@@ -108,7 +108,7 @@ export default function Bridge() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Educational Organizations</h2>
+            <h2 className="text-2xl font-semibold mb-2">Educational Organizations</h2>
             <ul className="space-y-4">
               <li>
                 <Card>
