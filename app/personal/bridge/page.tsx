@@ -95,7 +95,7 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.acebridge.org/" target="_blank" rel="noopener noreferrer">
-                        Ace Bridge <ExternalLink className="inline h-4 w-4" />
+                        Ace Bridge <Spade className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>

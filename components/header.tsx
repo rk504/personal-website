@@ -78,12 +78,12 @@ export function Header() {
                     Learning
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="uppercase text-sm">
+{/*                 <DropdownMenuItem className="uppercase text-sm">
                   <Link href="/personal/social" className="w-full">
                     Social
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="uppercase text-sm">
+ */}                <DropdownMenuItem className="uppercase text-sm">
                   <Link href="/personal/bridge" className="w-full">
                     Bridge
                   </Link>
