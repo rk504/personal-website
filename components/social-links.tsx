@@ -15,15 +15,6 @@ export function SocialLinks() {
           <span className="sr-only">LinkedIn</span>
         </Link>
         <Link
-          href="https://www.acebridge.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-300"
-        >
-          <Spade size={24} />
-          <span className="sr-only">Ace Bridge</span>
-        </Link>
-        <Link
           href="https://reesekoppel.substack.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,6 +22,15 @@ export function SocialLinks() {
         >
           <BookOpen size={24} />
           <span className="sr-only">Substack</span>
+        </Link>
+        <Link
+          href="https://www.acebridge.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-300"
+        >
+          <Spade size={24} />
+          <span className="sr-only">Ace Bridge</span>
         </Link>
       </div>
     </footer>
