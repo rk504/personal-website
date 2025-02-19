@@ -33,7 +33,7 @@ export default function Projects() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://github.com/rk504" target="_blank" rel="noopener noreferrer">
-                        Github <ExternalLink className="inline h-4 w-4" />
+                        GitHub <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
