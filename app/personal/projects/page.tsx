@@ -66,13 +66,13 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
-                      <a href="https://reesekoppel.substack.com/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://substack.com/@workstories" target="_blank" rel="noopener noreferrer">
                         Reesently Read <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Weekly Newsletter (3 Things I Learned This Week)</p>
+                    <p>Weekly Newsletter (Work Stories), excuse the pseudonym</p>
                   </CardContent>
                 </Card>
               </li>
