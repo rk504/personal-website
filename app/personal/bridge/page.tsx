@@ -24,7 +24,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Recognized for excellence in bridge.</p>
+                    <p>Recognized for efforts to promote bridge.</p>
                   </CardContent>
                 </Card>
               </li>
@@ -38,7 +38,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Featured in The New York Times.</p>
+                    <p>NYT feature</p>
                   </CardContent>
                 </Card>
               </li>
@@ -52,7 +52,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Discussing bridge strategies and insights.</p>
+                    <p>My favorite bridge podcast.</p>
                   </CardContent>
                 </Card>
               </li>
@@ -72,7 +72,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>This app is the best way to learn bridge.</p>
+                    <p>The best way to learn bridge.</p>
                   </CardContent>
                 </Card>
               </li>
@@ -109,12 +109,12 @@ export default function Bridge() {
                   <CardHeader>
                     <CardTitle>
                       <a href="https://www.youtube.com/channel/UCGpqgSoiMqMyhWcXxg-yHZA" target="_blank" rel="noopener noreferrer">
-                        Ace Bridge YouTube Channel<Spade className="inline h-4 w-4" />
+                        Ace Bridge YouTube Channel <Spade className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Some videos I made during COVID.</p>
+                    <p>I made some educational videos during COVID.</p>
                   </CardContent>
                 </Card>
               </li>
