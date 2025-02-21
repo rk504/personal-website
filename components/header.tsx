@@ -96,6 +96,12 @@ export function Header() {
             >
               Professional
             </Link>
+            <Link
+              href="https://calendly.com/reesekoppel"
+              className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
+            >
+              Calendly
+            </Link>
             <button
               onClick={openEmailDraft}
               className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
@@ -142,6 +148,12 @@ export function Header() {
           </div>
           <Link href="/professional" className="block text-sm tracking-wide hover:text-gray-600 uppercase">
             Professional
+          </Link>
+            <Link
+              href="https://calendly.com/reesekoppel"
+              className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
+            >
+              Calendly
           </Link>
           <button
             onClick={openEmailDraft}
