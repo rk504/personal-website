@@ -48,7 +48,7 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-[100] shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo - consistent across all screen sizes */}
@@ -116,82 +116,84 @@ export function Header() {
       </div>
 
       {/* Mobile Navigation Menu */}
-<div 
-  className={`lg:hidden fixed inset-0 top-20 bg-white z-50 transition-transform duration-300 ease-in-out ${
-    isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-  }`}
+      <div 
+        className={`lg:hidden fixed inset-y-0 right-0 w-[min(100vw,400px)] bg-white/95 backdrop-blur-md shadow-2xl z-[100] 
+          transition-all duration-300 ease-in-out transform
+          ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <nav className="container px-4 py-6 space-y-6">
-          <Link 
-            href="/" 
-            className="block text-lg font-medium hover:text-gray-600 py-2"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <button
-            onClick={() => {
-              scrollToAbout()
-              setIsMobileMenuOpen(false)
-            }}
-            className="block w-full text-left text-lg font-medium hover:text-gray-600 py-2"
-          >
-            About Me
-          </button>
-          
-          {/* Personal Section */}
-          <div className="space-y-3">
-            <div className="text-lg font-medium text-gray-400">Personal</div>
-            <div className="space-y-2 pl-4">
-              <Link 
-                href="/personal/projects" 
-                className="block text-lg hover:text-gray-600 py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Projects
-              </Link>
-              <Link 
-                href="/personal/learning" 
-                className="block text-lg hover:text-gray-600 py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Learning
-              </Link>
-              <Link 
-                href="/personal/bridge" 
-                className="block text-lg hover:text-gray-600 py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Bridge
-              </Link>
-            </div>
-          </div>
-
-          <Link 
-            href="/professional" 
-            className="block text-lg font-medium hover:text-gray-600 py-2"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Professional
-          </Link>
-
-          <div className="space-y-4 pt-4">
-            <Link
-              href="https://calendly.com/reesekoppel/15min?back=1"
-              className="block text-center text-lg font-medium bg-gray-100 hover:bg-gray-200 py-3 rounded-lg"
+        <nav className="h-full container px-8 py-6 space-y-6 overflow-y-auto">
+          <div className="flex flex-col items-end space-y-6">
+            <Link 
+              href="/" 
+              className="block text-lg font-medium hover:text-gray-600 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Schedule Meeting
+              Home
             </Link>
             <button
               onClick={() => {
-                openEmailDraft()
+                scrollToAbout()
                 setIsMobileMenuOpen(false)
               }}
-              className="block w-full text-center text-lg font-medium bg-gray-100 hover:bg-gray-200 py-3 rounded-lg"
+              className="block w-full text-left text-lg font-medium hover:text-gray-600 py-2"
             >
-              Email Me
+              About Me
             </button>
+            
+            {/* Personal Section */}
+            <div className="space-y-3">
+              <div className="text-lg font-medium text-gray-400">Personal</div>
+              <div className="space-y-2 pl-4">
+                <Link 
+                  href="/personal/projects" 
+                  className="block text-lg hover:text-gray-600 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Projects
+                </Link>
+                <Link 
+                  href="/personal/learning" 
+                  className="block text-lg hover:text-gray-600 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Learning
+                </Link>
+                <Link 
+                  href="/personal/bridge" 
+                  className="block text-lg hover:text-gray-600 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Bridge
+                </Link>
+              </div>
+            </div>
+
+            <Link 
+              href="/professional" 
+              className="block text-lg font-medium hover:text-gray-600 py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Professional
+            </Link>
+
+            <div className="space-y-4 pt-4">
+              <Link
+                href="https://calendly.com/reesekoppel/15min?back=1"
+                className="block text-center text-lg font-medium bg-gray-100 hover:bg-gray-200 py-3 rounded-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Schedule Meeting
+              </Link>
+              <button
+                onClick={() => {
+                  openEmailDraft()
+                  setIsMobileMenuOpen(false)
+                }}
+                className="block w-full text-center text-lg font-medium bg-gray-100 hover:bg-gray-200 py-3 rounded-lg"
+              >
+                Email Me
+              </button>
+            </div>
           </div>
         </nav>
       </div>
@@ -199,7 +201,7 @@ export function Header() {
       {/* Overlay */}
       {isMobileMenuOpen && (
         <div 
-          className="lg:hidden fixed inset-0 bg-black/50 z-40"
+          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[90]"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
