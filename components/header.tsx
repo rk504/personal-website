@@ -199,7 +199,7 @@ export function Header() {
       {/* Overlay */}
       {isMobileMenuOpen && (
         <div 
-          className="lg:hidden fixed inset-0 bg-black/20 z-30"
+          className="lg:hidden fixed inset-0 bg-black/50 z-40"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
