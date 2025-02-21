@@ -97,7 +97,7 @@ export function Header() {
               Professional
             </Link>
             <Link
-              href="https://calendly.com/reesekoppel"
+              href="https://calendly.com/reesekoppel/15min?back=1"
               className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
             >
               Calendly
