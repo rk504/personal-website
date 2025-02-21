@@ -4,9 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/header";
 import { PhotoCarousel } from "@/components/photo-carousel";
 import { SocialLinks } from "@/components/social-links";
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 export default function Home() {
   return (
