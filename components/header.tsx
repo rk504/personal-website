@@ -121,10 +121,10 @@ export function Header() {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <nav className="container px-4 py-6 space-y-6 lg:flex items-center space-x-8 bg-blue-500 p-4">
+        <nav className="px-4 py-6 space-y-3 bg-blue-300 p-4 w-1/2 ml-auto">
           <Link 
             href="/" 
-            className="block text-lg font-medium hover:text-gray-600 py-2"
+            className="block text-lg font-medium hover:text-gray-600"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Home
@@ -140,9 +140,9 @@ export function Header() {
           </button>
           
           {/* Personal Section */}
-          <div className="space-y-3">
-            <div className="text-lg font-medium text-gray-400">Personal</div>
-            <div className="space-y-2 pl-4">
+          <div>
+            <div className="block w-full text-left text-lg font-medium hover:text-gray-600">Personal</div>
+            <div className="pl-4 py-2">
               <Link 
                 href="/personal/projects" 
                 className="block text-lg hover:text-gray-600 py-2"
@@ -169,7 +169,7 @@ export function Header() {
 
           <Link 
             href="/professional" 
-            className="block text-lg font-medium hover:text-gray-600 py-2"
+            className="block text-left text-lg font-medium hover:text-gray-600"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Professional
