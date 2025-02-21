@@ -48,7 +48,7 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-100 shadow-sm">
+    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo - consistent across all screen sizes */}
@@ -71,7 +71,7 @@ export function Header() {
               <DropdownMenuTrigger className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase flex items-center gap-1">
                 Personal <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-[200px] bg-white shadow-lg border border-gray-200 z-50">
+              <DropdownMenuContent align="end" className="w-[200px] bg-white shadow-lg border border-gray-200">
                 <DropdownMenuItem className="uppercase text-sm">
                   <Link href="/personal/projects" className="w-full">Projects</Link>
                 </DropdownMenuItem>
@@ -102,7 +102,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 hover:bg-gray-100 rounded-md z-999"
+            className="lg:hidden p-2 hover:bg-gray-100 rounded-md"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -117,7 +117,7 @@ export function Header() {
 
       {/* Mobile Navigation Menu */}
       <div 
-        className={`lg:hidden fixed inset-y-0 right-0 w-[min(100vw,400px)] bg-white/95 backdrop-blur-md shadow-2xl z-999 
+        className={`lg:hidden fixed inset-y-0 right-0 w-[min(100vw,400px)] bg-white/95 backdrop-blur-md shadow-2xl 
           transition-all duration-300 ease-in-out transform
           ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
@@ -201,7 +201,7 @@ export function Header() {
       {/* Overlay */}
       {isMobileMenuOpen && (
         <div 
-          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
+          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}

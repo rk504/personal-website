@@ -16,7 +16,7 @@ export default function Home() {
               src="/images/hero/profile.jpg"
               alt="Reese, el Bilbaíno"
               fill
-              className="object-cover object-center rounded-lg"
+              className="object-center rounded-lg"
               priority
             />
             <div className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 flex flex-col gap-4">
