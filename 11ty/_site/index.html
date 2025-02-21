@@ -1,0 +1,12 @@
+<p>const eleventyNavigationPlugin = require(&quot;@11ty/eleventy-navigation&quot;);</p>
+<p>module.exports = function (eleventyConfig) {
+eleventyConfig.addPlugin(eleventyNavigationPlugin);
+eleventyConfig.addPassthroughCopy(&quot;assets&quot;);</p>
+<p>return {
+dir: {
+input: &quot;src&quot;,
+includes: &quot;_includes&quot;,
+output: &quot;_site&quot;,
+},
+};
+};</p>
