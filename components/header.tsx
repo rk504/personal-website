@@ -116,10 +116,10 @@ export function Header() {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div 
-        className={`lg:hidden fixed inset-0 top-20 bg-white z-40 transition-transform duration-300 ease-in-out ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+<div 
+  className={`lg:hidden fixed inset-0 top-20 bg-white z-50 transition-transform duration-300 ease-in-out ${
+    isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+  }`}
       >
         <nav className="container px-4 py-6 space-y-6">
           <Link 
