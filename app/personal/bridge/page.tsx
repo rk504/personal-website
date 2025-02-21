@@ -100,7 +100,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>The bridge tutoring company I started over COVID.</p>
+                    <p>My bridge tutoring business.</p>
                   </CardContent>
                 </Card>
               </li>
@@ -134,7 +134,7 @@ export default function Bridge() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Supporting bridge education initiatives.</p>
+                    <p>ACBLEF is committed to introducing, encouraging, and sustaining bridge players through online and in-person opportunities which promote the great game of bridge. Through our grantmaking and programming, we support duplicate, casual and stepping-stone game-playing for all age groups and all walks of life.</p>
                   </CardContent>
                 </Card>
               </li>
