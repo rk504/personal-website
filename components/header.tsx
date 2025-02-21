@@ -102,14 +102,14 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 hover:bg-gray-100 rounded-md"
+            className="lg:hidden p-2 hover:bg-gray-100 rounded-md z-999"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6 z-999" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6 z-999" />
             )}
           </button>
         </div>
@@ -117,12 +117,12 @@ export function Header() {
 
       {/* Mobile Navigation Menu */}
       <div 
-        className={`lg:hidden fixed inset-y-0 right-0 w-[min(100vw,400px)] bg-white/95 backdrop-blur-md shadow-2xl z-[100] 
+        className={`lg:hidden fixed inset-y-0 right-0 w-[min(100vw,400px)] bg-white/95 backdrop-blur-md shadow-2xl z-999 
           transition-all duration-300 ease-in-out transform
           ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <nav className="h-full container px-8 py-6 space-y-6 overflow-y-auto">
-          <div className="flex flex-col items-end space-y-6">
+        <nav className="h-full container px-8 py-6 space-y-6 overflow-y-auto z-999">
+          <div className="flex flex-col items-end space-y-6 z-999">
             <Link 
               href="/" 
               className="block text-lg font-medium hover:text-gray-600 py-2"
@@ -201,7 +201,7 @@ export function Header() {
       {/* Overlay */}
       {isMobileMenuOpen && (
         <div 
-          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[90]"
+          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-999"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
