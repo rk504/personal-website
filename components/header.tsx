@@ -121,8 +121,7 @@ export function Header() {
           transition-all duration-300 ease-in-out transform
           ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <nav className="h-full container px-8 py-6 space-y-6 overflow-y-auto z-999">
-          <div className="flex flex-col items-end space-y-6 z-999">
+        <nav className="container px-4 py-6 space-y-6 lg:flex items-center space-x-8 bg-blue-500 p-4">          <div className="flex flex-col items-end space-y-6 z-999">
             <Link 
               href="/" 
               className="block text-lg font-medium hover:text-gray-600 py-2"
