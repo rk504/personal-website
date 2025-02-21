@@ -1,9 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Header } from "@/components/header"
-import { PhotoCarousel } from "@/components/photo-carousel"
-import { SocialLinks } from "@/components/social-links"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Header } from "@/components/header";
+import { PhotoCarousel } from "@/components/photo-carousel";
+import { SocialLinks } from "@/components/social-links";
 
 export default function Home() {
   return (
@@ -17,7 +17,6 @@ export default function Home() {
               alt="Reese, el Bilbaíno"
               fill
               className="object-cover object-center rounded-lg"
-              priority
             />
             <div className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 flex flex-col gap-4">
               <Button
@@ -40,7 +39,9 @@ export default function Home() {
           <div id="about" className="space-y-4 max-w-2xl mx-auto text-center">
             <h1 className="text-4xl font-serif">Hello and Welcome</h1>
             <p className="text-lg text-muted-foreground">
-              I'm Reese Koppel, a developer passionate about connecting our isolated world. I enjoy crafting elegant solutions, optimizing efficiency, and playing bridge. Welcome to my site.
+              I'm Reese Koppel, a developer passionate about connecting our
+              isolated world. I enjoy crafting elegant solutions, optimizing
+              efficiency, and playing bridge. Welcome to my site.
             </p>
           </div>
         </div>
@@ -50,6 +51,5 @@ export default function Home() {
         <SocialLinks />
       </main>
     </>
-  )
+  );
 }
-
