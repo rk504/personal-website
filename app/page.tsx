@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen flex flex-col z-999">
+      <main className="min-h-screen flex flex-col">
         <div className="container flex-grow flex flex-col py-12 md:py-24 space-y-12">
           <div className="relative w-full aspect-[16/9]">
             <Image
