@@ -71,7 +71,7 @@ export function Header() {
               <DropdownMenuTrigger className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase flex items-center gap-1">
                 Personal <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-[200px]">
+              <DropdownMenuContent align="end" className="w-[200px] bg-white shadow-lg border border-gray-200 z-50">
                 <DropdownMenuItem className="uppercase text-sm">
                   <Link href="/personal/projects" className="w-full">Projects</Link>
                 </DropdownMenuItem>
