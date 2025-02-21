@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen flex flex-col">
+      <main className="min-h-screen flex flex-col z-999">
         <div className="container flex-grow flex flex-col py-12 md:py-24 space-y-12">
           <div className="relative w-full aspect-[16/9]">
             <Image
@@ -38,9 +38,9 @@ export default function Home() {
           </div>
 
           <div id="about" className="space-y-4 max-w-2xl mx-auto text-center">
-            <h1 className="text-4xl font-serif">Welcome</h1>
+            <h1 className="text-4xl font-serif">Hello and Welcome</h1>
             <p className="text-lg text-muted-foreground">
-              I'm Reese Koppel, an NYC-based entrepreneur building to connect our isolated world. Welcome to my site.
+              I'm Reese Koppel, a developer passionate about connecting our isolated world. I enjoy crafting elegant solutions, optimizing efficiency, and playing bridge. Welcome to my site.
             </p>
           </div>
         </div>
