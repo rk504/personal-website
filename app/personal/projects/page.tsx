@@ -62,7 +62,7 @@ export default function Projects() {
           <section>
             <h2 className="text-2xl font-semibold mb-2">Creative</h2>
             <ul className="space-y-4">
-              <li>
+              {/* <li>
                 <Card>
                   <CardHeader>
                     <CardTitle>
@@ -75,7 +75,7 @@ export default function Projects() {
                     <p>Weekly Newsletter on interview prep, turning work stories into interview-friendly answers. Excuse the pseudonym based on the world's two best bars.</p>
                   </CardContent>
                 </Card>
-              </li>
+              </li> */}
               <li>
                 <Card>
                   <CardHeader>
