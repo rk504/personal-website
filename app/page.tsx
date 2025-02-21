@@ -39,9 +39,9 @@ export default function Home() {
           <div id="about" className="space-y-4 max-w-2xl mx-auto text-center">
             <h1 className="text-4xl font-serif">Hello and Welcome</h1>
             <p className="text-lg text-muted-foreground">
-              I'm Reese Koppel, a developer passionate about connecting our
-              isolated world. I enjoy crafting elegant solutions, optimizing
-              efficiency, and playing bridge. Welcome to my site.
+              I'm Reese Koppel, a developer passionate about connecting our 
+              world.<br />I enjoy crafting elegant solutions, optimizing
+              efficiency, and playing bridge.<br />Welcome to my site.
             </p>
           </div>
         </div>
