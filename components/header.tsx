@@ -1,11 +1,13 @@
 "use client"
 
 import Link from "next/link"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, Menu } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   const scrollToAbout = () => {
     if (window.location.pathname === '/') {
       const aboutSection = document.getElementById("about")
@@ -24,7 +26,6 @@ export function Header() {
     }
   }
 
-  // Add this at the top of the component to handle the offset on load
   useEffect(() => {
     if (window.location.hash.includes('offset=')) {
       const offset = parseInt(window.location.hash.split('offset=')[1])
@@ -47,13 +48,16 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50">
-      <div className="container mx-auto px-6">
+    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+      <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
+          {/* Logo - consistent across all screen sizes */}
           <Link href="/" className="text-2xl font-serif text-gray-800">
             Reese Koppel
           </Link>
-          <nav className="hidden md:flex items-center space-x-8">
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
             <Link href="/" className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase">
               Home
             </Link>
@@ -69,31 +73,17 @@ export function Header() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-[200px]">
                 <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/projects" className="w-full">
-                    Projects
-                  </Link>
+                  <Link href="/personal/projects" className="w-full">Projects</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/learning" className="w-full">
-                    Learning
-                  </Link>
+                  <Link href="/personal/learning" className="w-full">Learning</Link>
                 </DropdownMenuItem>
-{/*                 <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/social" className="w-full">
-                    Social
-                  </Link>
-                </DropdownMenuItem>
- */}                <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/bridge" className="w-full">
-                    Bridge
-                  </Link>
+                <DropdownMenuItem className="uppercase text-sm">
+                  <Link href="/personal/bridge" className="w-full">Bridge</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link
-              href="/professional"
-              className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase"
-            >
+            <Link href="/professional" className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase">
               Professional
             </Link>
             <Link
@@ -109,55 +99,83 @@ export function Header() {
               Email Me
             </button>
           </nav>
+
+          {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
-            onClick={() => document.documentElement.classList.toggle("mobile-menu-open")}
+            className="lg:hidden p-2 hover:bg-gray-100 rounded-md"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            <Menu className="h-6 w-6" />
           </button>
         </div>
       </div>
 
-      {/* Mobile menu */}
-      <div className="md:hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-lg transform transition-transform duration-200 -translate-y-full mobile-menu-open:translate-y-0">
-        <nav className="container px-6 py-4 space-y-4">
-          <Link href="/" className="block text-sm tracking-wide hover:text-gray-600 uppercase">
+      {/* Mobile Navigation Menu */}
+      <div 
+        className={`lg:hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-lg transform transition-transform duration-300 ease-in-out ${
+          isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
+        }`}
+      >
+        <nav className="container px-4 py-4 space-y-4">
+          <Link 
+            href="/" 
+            className="block text-sm tracking-wide hover:text-gray-600 uppercase py-2"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             Home
           </Link>
           <button
-            onClick={scrollToAbout}
-            className="block w-full text-left text-sm tracking-wide hover:text-gray-600 uppercase"
+            onClick={() => {
+              scrollToAbout()
+              setIsMobileMenuOpen(false)
+            }}
+            className="block w-full text-left text-sm tracking-wide hover:text-gray-600 uppercase py-2"
           >
             About Me
           </button>
-          <div className="space-y-2 pl-4">
-            <Link href="/personal/projects" className="block text-sm tracking-wide hover:text-gray-600 uppercase">
+          <div className="space-y-2 border-l-2 border-gray-200 pl-4">
+            <Link 
+              href="/personal/projects" 
+              className="block text-sm tracking-wide hover:text-gray-600 uppercase py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Projects
             </Link>
-            <Link href="/personal/learning" className="block text-sm tracking-wide hover:text-gray-600 uppercase">
+            <Link 
+              href="/personal/learning" 
+              className="block text-sm tracking-wide hover:text-gray-600 uppercase py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Learning
             </Link>
-            <Link href="/personal/social" className="block text-sm tracking-wide hover:text-gray-600 uppercase">
-              Social
-            </Link>
-            <Link href="/personal/bridge" className="block text-sm tracking-wide hover:text-gray-600 uppercase">
+            <Link 
+              href="/personal/bridge" 
+              className="block text-sm tracking-wide hover:text-gray-600 uppercase py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Bridge
             </Link>
           </div>
-          <Link href="/professional" className="block text-sm tracking-wide hover:text-gray-600 uppercase">
+          <Link 
+            href="/professional" 
+            className="block text-sm tracking-wide hover:text-gray-600 uppercase py-2"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             Professional
           </Link>
-            <Link
-              href="https://calendly.com/reesekoppel/15min?back=1"
-              className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
-            >
-              Calendly
+          <Link
+            href="https://calendly.com/reesekoppel/15min?back=1"
+            className="block text-sm tracking-wide hover:text-gray-600 uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Calendly
           </Link>
           <button
-            onClick={openEmailDraft}
-            className="block w-full text-left text-sm tracking-wide hover:text-gray-600 uppercase"
+            onClick={() => {
+              openEmailDraft()
+              setIsMobileMenuOpen(false)
+            }}
+            className="block w-full text-left text-sm tracking-wide hover:text-gray-600 uppercase py-2"
           >
             Contact
           </button>
@@ -166,4 +184,3 @@ export function Header() {
     </header>
   )
 }
-
