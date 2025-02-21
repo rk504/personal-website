@@ -14,7 +14,7 @@ export default function Home() {
           <div className="relative w-full aspect-[16/9]">
             <Image
               src="/images/hero/profile.jpg"
-              alt="Reese Koppel in a European city"
+              alt="Reese, el Bilbaíno"
               fill
               className="object-cover object-center rounded-lg"
               priority
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
 
           <div id="about" className="space-y-4 max-w-2xl mx-auto text-center">
-            <h1 className="text-4xl font-serif">Hello and Welcome</h1>
+            <h1 className="text-4xl font-serif">Welcome</h1>
             <p className="text-lg text-muted-foreground">
               I'm Reese Koppel, an NYC-based entrepreneur building to connect our isolated world. Welcome to my site.
             </p>
