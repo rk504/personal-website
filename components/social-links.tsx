@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, BookOpen, Spade } from "lucide-react"
+import { Linkedin, Spade, Bike, LibraryBig, PenLine } from "lucide-react"
 
 export function SocialLinks() {
   return (
@@ -15,13 +15,13 @@ export function SocialLinks() {
           <span className="sr-only">LinkedIn</span>
         </Link>
         <Link
-          href="https://reesekoppel.substack.com/"
+          href="https://reesentlyread.blogspot.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
         >
-          <BookOpen size={24} />
-          <span className="sr-only">Substack</span>
+          <LibraryBig size={24} />
+          <span className="sr-only">Books</span>
         </Link>
         <Link
           href="https://www.acebridge.org/"
@@ -29,8 +29,17 @@ export function SocialLinks() {
           rel="noopener noreferrer"
           className="hover:text-gray-300"
         >
-          <Spade size={24} />
-          <span className="sr-only">Ace Bridge</span>
+          <Bike size={24} />
+          <span className="sr-only">Strava</span>
+        </Link>
+        <Link
+          href="https://workstories.substack.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-300"
+        >
+          <PenLine size={24} />
+          <span className="sr-only">Substack</span>
         </Link>
       </div>
     </footer>
