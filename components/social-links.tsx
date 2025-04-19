@@ -29,6 +29,15 @@ export function SocialLinks() {
           rel="noopener noreferrer"
           className="hover:text-gray-300"
         >
+          <Spade size={24} />
+          <span className="sr-only">Ace Bridge</span>
+        </Link>
+        <Link
+          href="https://www.strava.com/athletes/122197702"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-300"
+        >
           <Bike size={24} />
           <span className="sr-only">Strava</span>
         </Link>
