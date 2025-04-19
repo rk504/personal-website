@@ -62,7 +62,7 @@ export default function Professional() {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <ul className="list-disc pl-4 space-y-1">
-                    <li>One of two members on the Corp Dev team, reporting directly to the CEO, CFO, and VP of Corp Dev.
+                    <li>One of two members on the Corp Dev team, reporting directly to the CEO, CFO, and VP of Corp Dev.</li>
                     <li>Led collection and analysis of financial and customer KPIs for quarterly board presentation.</li>
                     <li>Built acquisition evaluation models using user retention trends, feature adoption, and revenue attribution.</li>
                   </ul>
