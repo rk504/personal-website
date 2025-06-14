@@ -16,19 +16,19 @@ export default function Professional() {
             
             <div className="space-y-4 text-lg text-muted-foreground italic">
               <p>
-                I love data. My background is in finance, Cognitive Science, and Data Science, but I'm always learning. These days, that includes 
-                full-stack development to build and test ideas.
+                I love learning. My background is in finance, cognitive science (behavioral economics), and data science. 
               </p>
                 
               <p>
-                I also have a builder's mindset. As the founder of Ace Bridge, I built a tutoring company to $3K+ MRR by prioritizing 
-                effective teaching methods. As a product manager at Tricky Bridge, 
-                I increased retention by pinpointing user issues. Now at Copado, I'm helping a $120M ARR company find strategic M&A targets on our corp dev team of 2.
+              I have a builder's mindset. I enjoy vibecoding to test ideas, the most recent being a two-way volunteering marketplace to match volunteers with local nonprofits.
+              As the founder of Ace Bridge, I built a tutoring company to $3K+ MRR by understanding customer needs. 
+              As a product manager at Tricky Bridge, I increased user retention by diagnosing key issues. 
+              I'm now at Copado finding + vetting M&A targets on a team of 2.
               </p>
 
               <p>
-                Outside of work, I'm usually playing bridge, reading nonfiction, channeling my inner David Foster Wallace into Beli/Strava reviews, and 
-                perpetually hoping the next Pelicans/Saints season won't be a&nbsp;
+                Outside of work, I play bridge, read nonfiction, channel my inner David Foster Wallace into verbose Beli/Strava reviews, and 
+                hope next Saints/Pels season won't be a&nbsp;
     <a
       href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
       target="_blank"
