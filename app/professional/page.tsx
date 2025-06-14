@@ -28,8 +28,17 @@ export default function Professional() {
 
               <p>
                 Outside of work, I'm usually playing bridge, reading nonfiction, channeling my inner David Foster Wallace into Beli/Strava reviews, and 
-                perpetually hoping the next Pelicans/Saints season won't be so dismal.
-              </p>
+                perpetually hoping the next Pelicans/Saints season won't be a&nbsp;
+    <a
+      href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline hover:text-primary"
+    >
+                dumpster&nbsp;fire
+              </a>
+              .
+              </p>  
             </div>
           </div>
 
