@@ -28,7 +28,7 @@ export default function Professional() {
 
               <p>
                 Outside of work, I'm usually playing bridge, reading nonfiction, channeling my inner David Foster Wallace into Beli/Strava reviews, and 
-                perpetually looking forward to next season for the Pelicans/Saints.
+                perpetually hoping the next Pelicans/Saints season won't be so dismal.
               </p>
             </div>
           </div>
@@ -69,7 +69,8 @@ export default function Professional() {
                     <li>Conduct due diligence on potential acquisition targets, including market sizing, financial modeling, and competitive analysis.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge variant="secondary">Corp Dev</Badge>
+                    <Badge variant="secondary">M&A</Badge>
+                    <Badge variant="secondary">Corporate Strategy</Badge>
                     <Badge variant="secondary">Financial Modeling</Badge>
                     <Badge variant="secondary">Due Diligence</Badge>
                   </div>
@@ -195,7 +196,6 @@ export default function Professional() {
                     <span className="text-xl font-semibold">Yale University</span>
                     <p className="text-sm text-muted-foreground">B.S. Cognitive Science, Data Science Certificate</p>
                   </div>
-                  <Badge>May 2023</Badge>
                 </CardTitle>
               </CardHeader>
               <CardContent>
