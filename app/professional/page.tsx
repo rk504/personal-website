@@ -16,19 +16,19 @@ export default function Professional() {
             
             <div className="space-y-4 text-lg text-muted-foreground italic">
               <p>
-                I love data. My background is in finance, Cognitive Science, and Data Science, but I'm always learning—these days, that includes 
+                I love data. My background is in finance, Cognitive Science, and Data Science, but I'm always learning. These days, that includes 
                 full-stack development to build and test ideas.
               </p>
                 
               <p>
-                I also have a builder's mindset. As the founder of Ace Bridge, I built a tutoring company to $3K MRR by prioritizing 
+                I also have a builder's mindset. As the founder of Ace Bridge, I built a tutoring company to $3K+ MRR by prioritizing 
                 effective teaching methods. As a product manager at Tricky Bridge, 
-                I increased retention by pinpointing user issues. Now at Copado, I'm helping a $120M ARR company find strategic acquisiton targets on our two-person corp dev team.
+                I increased retention by pinpointing user issues. Now at Copado, I'm helping a $120M ARR company find strategic M&A targets on our corp dev team of 2.
               </p>
 
               <p>
-                Outside of work, I'm usually playing bridge, reading biographies, or (unfortunately) getting my 
-                hopes up about the Pelicans and Saints.
+                Outside of work, I'm usually playing bridge, reading nonfiction, channeling my inner David Foster Wallace into Beli/Strava reviews, and 
+                perpetually looking forward to next season for the Pelicans/Saints.
               </p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Professional() {
                 <CardHeader>
                   <CardTitle className="flex justify-between items-start">
                     <div>
-                      <span className="text-xl font-semibold">Corp Dev</span>
+                      <span className="text-xl font-semibold">Corp Dev Associate</span>
                       <p className="text-sm text-muted-foreground">
                         <Link 
                           href="https://www.copado.com/"
@@ -62,9 +62,11 @@ export default function Professional() {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <ul className="list-disc pl-4 space-y-1">
-                    <li>One of two members on the Corp Dev team, reporting directly to the CEO, CFO, and VP of Corp Dev.</li>
-                    <li>Led collection and analysis of financial and customer KPIs for quarterly board presentation.</li>
-                    <li>Built acquisition evaluation models using user retention trends, feature adoption, and revenue attribution.</li>
+                    <li>Responsible for executing inorganic growth strategy, due diligence, and reverse due diligence while reporting to the CEO, CFO, and Corp Dev SVP.</li>
+                    <li>Compile and prepare data financial and retention data for quarterly board presentations.</li>
+                    <li>Built 3 year outlook financial budget, including revenue, EBITDA, and cash flow projections.</li>
+                    <li>Built acquisition evaluation models and investment thesis memos using user retention trends, feature adoption, and revenue attribution.</li>
+                    <li>Conduct due diligence on potential acquisition targets, including market sizing, financial modeling, and competitive analysis.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge variant="secondary">Corp Dev</Badge>
