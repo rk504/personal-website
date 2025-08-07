@@ -34,6 +34,16 @@ export function PhotoCarousel() {
         <h2 className="text-3xl font-serif mb-8 text-center">Photo Gallery</h2>
         <div className="relative max-w-3xl mx-auto">
           <div className="relative w-full h-full flex items-center justify-center">
+            {/* Left Arrow */}
+            <button
+              aria-label="Previous photo"
+              className="absolute left-0 z-10 p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
+              style={{ top: '50%', transform: 'translateY(-50%)' }}
+              onClick={() => setCurrentPhotoIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length)}
+            >
+              <span style={{ fontSize: '2rem', lineHeight: 1 }}>&larr;</span>
+            </button>
+            {/* Image */}
             <Image
               src={photos[currentPhotoIndex]}
               alt={`Photo ${currentPhotoIndex + 1}`}
@@ -43,6 +53,15 @@ export function PhotoCarousel() {
               style={{ width: 'auto', height: 'auto' }}
               priority
             />
+            {/* Right Arrow */}
+            <button
+              aria-label="Next photo"
+              className="absolute right-0 z-10 p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
+              style={{ top: '50%', transform: 'translateY(-50%)' }}
+              onClick={() => setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length)}
+            >
+              <span style={{ fontSize: '2rem', lineHeight: 1 }}>&rarr;</span>
+            </button>
           </div>
         </div>
       </div>
