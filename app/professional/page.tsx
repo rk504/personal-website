@@ -23,7 +23,7 @@ export default function Professional() {
               I have a builder's mindset. I enjoy vibecoding to test ideas, the most recent being a two-way volunteering marketplace to match volunteers with local nonprofits.
               As the founder of Ace Bridge, I built a tutoring company to $3K+ MRR by understanding customer needs. 
               As a product manager at Tricky Bridge, I increased user retention by diagnosing key issues. 
-              I'm now at Copado finding + vetting M&A targets on a team of 2.
+              I'm now at Copado working on growth, strategy, and M&A.
               </p>
 
               <p>
@@ -53,7 +53,7 @@ export default function Professional() {
                 <CardHeader>
                   <CardTitle className="flex justify-between items-start">
                     <div>
-                      <span className="text-xl font-semibold">Corp Dev Associate</span>
+                      <span className="text-xl font-semibold">Corp Dev</span>
                       <p className="text-sm text-muted-foreground">
                         <Link 
                           href="https://www.copado.com/"
@@ -71,11 +71,12 @@ export default function Professional() {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <ul className="list-disc pl-4 space-y-1">
-                    <li>Responsible for executing inorganic growth strategy, due diligence, and reverse due diligence while reporting to the CEO, CFO, and Corp Dev SVP.</li>
-                    <li>Compile and prepare data financial and retention data for quarterly board presentations.</li>
-                    <li>Built 3 year outlook financial budget, including revenue, EBITDA, and cash flow projections.</li>
-                    <li>Built acquisition evaluation models and investment thesis memos using user retention trends, feature adoption, and revenue attribution.</li>
+                    <li>Responsible for executing inorganic growth strategy, due diligence, and reverse due diligence while reporting to the CFO.</li>
+                    <li>Compile SaaS metrics + financial data for quarterly board presentations.</li>
+                    <li>Built 3 year outlook financial budget with revenue, EBITDA, and cash flow projections.</li>
+                    <li>Built acquisition evaluation models and investment thesis materials using user retention trends, feature adoption, and revenue attribution.</li>
                     <li>Conduct due diligence on potential acquisition targets, including market sizing, financial modeling, and competitive analysis.</li>
+                    <li>Prepare reverse due diligence materials to assist investors (Insight, SoftBank, etc.) for portfolio company analyses.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge variant="secondary">M&A</Badge>
