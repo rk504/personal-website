@@ -18,13 +18,43 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
+                      <a href="https://our-third-place.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        Our Third Place <ExternalLink className="inline h-4 w-4" />
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>
+                    I built a self-hosted MVP covering the full user journey: signup/login + password reset, linked backend, Stripe payments, member portal, and linked RSVP-ready events + waitlists for a 1,700-member rollout and migration off Wix. This is the parent company of the 1700-member <a href="https://www.themediadinnerclub.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Media Dinner Club</a>.
+                    </p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://seepg.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        Seepg <ExternalLink className="inline h-4 w-4" />
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>WIP for promo code efficiency + LTV/ROI calculations.</p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
                       <a href="https://easyvol.netlify.app/" target="_blank" rel="noopener noreferrer">
                         EasyVol <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Two-sided marketplace to connect volunteers and volunteer opportunities</p>
+                    <p>Two-sided marketplace to connect volunteers with volunteer opportunities, a fun side project that didn't take off.</p>
                   </CardContent>
                 </Card>
               </li>
@@ -42,20 +72,7 @@ export default function Projects() {
                   </CardContent>
                 </Card>
               </li>
-              <li>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>
-                      <a href="https://bsky.app/profile/pels504.bsky.social" target="_blank" rel="noopener noreferrer">
-                        NBA Data Analysis <ExternalLink className="inline h-4 w-4" />
-                      </a>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p>Creating NBA data visualizations</p>
-                  </CardContent>
-                </Card>
-              </li>
+              
             </ul>
           </section>
 
@@ -80,13 +97,27 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
+                      <a href="https://bsky.app/profile/pels504.bsky.social" target="_blank" rel="noopener noreferrer">
+                        NBA Data Analysis <ExternalLink className="inline h-4 w-4" />
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Creating NBA data visualizations</p>
+                  </CardContent>
+                </Card>
+              </li>
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
                       <a href="https://open.spotify.com/show/7lZeZrEoBKmlsjUAe8qTh8" target="_blank" rel="noopener noreferrer">
                         Read Receipts <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>We discuss books (pretentious, don't listen)</p>
+                    <p>Jeffrey and I made a podcast that is NOT a book club. Not worth your time, but still send me book recs.</p>
                   </CardContent>
                 </Card>
               </li>
