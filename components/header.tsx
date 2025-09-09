@@ -76,10 +76,10 @@ export function Header() {
                   <Link href="/personal/projects" className="w-full">Projects</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/learning" className="w-full">Learning</Link>
+                  <Link href="/personal/bridge" className="w-full">Bridge</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/bridge" className="w-full">Bridge</Link>
+                  <Link href="/personal/friends" className="w-full">My Friends</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -150,19 +150,26 @@ export function Header() {
               >
                 Projects
               </Link>
-              <Link 
+{/*               <Link 
                 href="/personal/learning" 
                 className="block text-lg hover:text-gray-600 py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Learning
-              </Link>
+              </Link> */}
               <Link 
                 href="/personal/bridge" 
                 className="block text-lg hover:text-gray-600 py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Bridge
+              </Link>
+              <Link 
+                href="/personal/friends" 
+                className="block text-lg hover:text-gray-600 py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                My Friends
               </Link>
             </div>
           </div>

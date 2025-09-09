@@ -27,11 +27,11 @@ export default function Professional() {
               </a>).
               As the founder of Ace Bridge, I organically built a tutoring company of 8 teachers and 100+ students by understanding customer needs. 
               As a product manager at Tricky Bridge, I increased user retention by diagnosing key issues. 
-              Now at Copado, I lead our corp dev efforts, which involves strategy, M&A, and improving our quarterly board metrics calculations process.
+              Now I lead corp dev at Copado.
               </p>
 
               <p>
-                I enjoy playing bridge, the melodica/sax/piano, and surge caps. I'm ranked 18th in New Orleans on Beli, where I torture my few followers with my thoughts. 
+                I enjoy playing bridge, melodica/sax/piano, and surge caps. I'm ranked 18th in New Orleans on Beli, where I torture my few followers with my thoughts. 
                 I worry the Saints/Pels seasons will be&nbsp;
     <a
       href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
@@ -77,7 +77,7 @@ export default function Professional() {
                   <ul className="list-disc pl-4 space-y-1">
                   <li>Own inorganic growth strategy and KPI calculations while reporting to the CFO.</li>
                   <li>Build 3-year financial budget projections.</li>
-                  <li>Develop M&A models and investment theses which project retention, feature adoption, and revenue attribution.</li>
+                  <li>Develop M&A models and investment theses to project retention, feature adoption, and revenue attribution.</li>
                   <li>Lead end-to-end M&A diligence: market sizing, financial modeling, and competitive analysis.</li>
                   <li>Prepare reverse due diligence materials to assist investors (Insight, SoftBank, etc.) for portfolio company analyses.</li>
                   </ul>
@@ -212,7 +212,7 @@ export default function Professional() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p>Activities: Bridge Club (Founder), Entrepreneurial Society, Chess Club</p>
+                <p>Activities: Bridge Club (Founder), Whaling Crew (President), Title IX Advisory Board, Entrepreneurial Society, Chess Club, Peer Wellness Cultivator</p>
               </CardContent>
             </Card>
           </section>
