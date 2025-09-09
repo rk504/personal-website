@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Spade, Bike, LibraryBig, PenLine } from "lucide-react"
+import { Linkedin, Spade, Bike, LibraryBig } from "lucide-react"
 
 export function SocialLinks() {
   return (
