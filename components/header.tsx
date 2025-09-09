@@ -184,7 +184,7 @@ export function Header() {
 
           <div className="space-y-4 pt-4">
             <Link
-              href="https://calendly.com/reesekoppel/15min?back=1"
+              href="https://calendly.com/rk-copado"
               className="block text-center text-lg font-medium bg-gray-100 hover:bg-gray-200 py-3 rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >

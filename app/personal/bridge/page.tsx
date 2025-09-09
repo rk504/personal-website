@@ -154,6 +154,37 @@ export default function Bridge() {
               </li>
             </ul>
           </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-2">Movies I'm (allegedly) in</h2>
+            <ul className="space-y-4">
+              <li>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      <a href="https://www.imdb.com/title/tt12164558/" target="_blank" rel="noopener noreferrer">
+                        Last Hand (2026) <ExternalLink className="inline h-4 w-4" />
+                      </a>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-2">
+                      <strong>Role:</strong> Hot Guy #2 (I was Hot Guy #1 and got demoted)
+                    </p>
+                    <p className="mb-2">
+                      <strong>Plot:</strong> Legendary bridge player Lilith Fudent leads a team of misfits to the world bridge championships to save her sister's New Orleans bridge club.
+                    </p>
+                    <p className="mb-2">
+                      <strong>Stars:</strong> Beverly D'Angelo (Lilith Fudent), Joanna Cassidy, Mimi Kennedy
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      <strong>Release:</strong> Expected 2026 • Drama • Directed by Nate Dushku
+                    </p>
+                  </CardContent>
+                </Card>
+              </li>
+            </ul>
+          </section>
         </div>
         <SocialLinks />
       </main>

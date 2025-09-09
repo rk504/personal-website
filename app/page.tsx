@@ -40,7 +40,7 @@ export default function Home() {
           <div id="about" className="space-y-4 max-w-2xl mx-auto text-center">
             <h1 className="text-4xl font-serif">Greetings</h1>
             <p className="text-lg text-muted-foreground">
-            I'm Reese. I build websites that save time and bring people together so we can make the most of the  <s />
+            I'm Reese. I build <Link href="/personal/projects" className="underline text-blue-600 hover:text-blue-800">websites</Link> that save time and bring people together so we can make the most of the  <s />
   <a
     href="https://mainfacts.com/time-life-countdown-timer"
     target="_blank"
