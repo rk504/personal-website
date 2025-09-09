@@ -15,8 +15,9 @@ export function SocialLinks() {
           <span className="sr-only">LinkedIn</span>
         </Link>
         <Link
-          href="https://reesentlyread.blogspot.com/"
-          target="_blank"
+      //    href="https://reesentlyread.blogspot.com/"
+           href="https://www.goodreads.com/user/show/79282113-reese"
+           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
         >
@@ -41,7 +42,7 @@ export function SocialLinks() {
           <Bike size={24} />
           <span className="sr-only">Strava</span>
         </Link>
-        <Link
+  {/*       <Link
           href="https://workstories.substack.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -49,7 +50,7 @@ export function SocialLinks() {
         >
           <PenLine size={24} />
           <span className="sr-only">Substack</span>
-        </Link>
+        </Link> */}
       </div>
     </footer>
   )

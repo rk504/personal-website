@@ -38,11 +38,18 @@ export default function Home() {
           </div>
 
           <div id="about" className="space-y-4 max-w-2xl mx-auto text-center">
-            <h1 className="text-4xl font-serif">Hello and Welcome</h1>
+            <h1 className="text-4xl font-serif">Greetings</h1>
             <p className="text-lg text-muted-foreground">
-              I'm Reese Koppel, a developer passionate about connecting our 
-              world.<br />I enjoy crafting elegant solutions, optimizing
-              efficiency, and playing bridge.<br />Welcome to my site.
+            I'm Reese. I build websites that save time and bring people together so we can make the most of the  <s />
+  <a
+    href="https://mainfacts.com/time-life-countdown-timer"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline text-blue-600 hover:text-blue-800"
+  >
+    limited time we have
+  </a>
+  . <br />Welcome to my site.
             </p>
           </div>
         </div>

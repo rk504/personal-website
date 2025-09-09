@@ -16,26 +16,30 @@ export default function Professional() {
             
             <div className="space-y-4 text-lg text-muted-foreground italic">
               <p>
-                I love learning. My background is in finance, cognitive science (behavioral economics), and data science. 
-              </p>
-                
-              <p>
-              I have a builder's mindset. I enjoy vibecoding to test ideas, the most recent being a two-way volunteering marketplace to match volunteers with local nonprofits.
-              As the founder of Ace Bridge, I built a tutoring company to $3K+ MRR by understanding customer needs. 
+              I have a builder's mindset. I enjoy testing ideas through web dev, the most recent being a promo code LTV dashboard (others <s />
+              <a
+      href="/personal/projects"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline hover:text-primary"
+    >
+                here
+              </a>).
+              As the founder of Ace Bridge, I organically built a tutoring company of 8 teachers and 100+ students by understanding customer needs. 
               As a product manager at Tricky Bridge, I increased user retention by diagnosing key issues. 
-              I'm now at Copado working on growth, strategy, and M&A.
+              Now at Copado, I lead our corp dev efforts, which involves strategy, M&A, and improving our quarterly board metrics calculations process.
               </p>
 
               <p>
-                Outside of work, I play bridge, read nonfiction, channel my inner David Foster Wallace into verbose Beli/Strava reviews, and 
-                hope next Saints/Pels season won't be a&nbsp;
+                I enjoy playing bridge, the melodica/sax/piano, and surge caps. I'm ranked 18th in New Orleans on Beli, where I torture my few followers with my thoughts. 
+                I worry the Saints/Pels seasons will be&nbsp;
     <a
       href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
       target="_blank"
       rel="noopener noreferrer"
       className="underline hover:text-primary"
     >
-                dumpster&nbsp;fire
+                dumpster&nbsp;fires
               </a>
               .
               </p>  
@@ -53,7 +57,7 @@ export default function Professional() {
                 <CardHeader>
                   <CardTitle className="flex justify-between items-start">
                     <div>
-                      <span className="text-xl font-semibold">Corp Dev</span>
+                      <span className="text-xl font-semibold">Corp Dev Lead</span>
                       <p className="text-sm text-muted-foreground">
                         <Link 
                           href="https://www.copado.com/"
@@ -71,12 +75,11 @@ export default function Professional() {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <ul className="list-disc pl-4 space-y-1">
-                    <li>Responsible for executing inorganic growth strategy, due diligence, and reverse due diligence while reporting to the CFO.</li>
-                    <li>Compile SaaS metrics + financial data for quarterly board presentations.</li>
-                    <li>Built 3 year outlook financial budget with revenue, EBITDA, and cash flow projections.</li>
-                    <li>Built acquisition evaluation models and investment thesis materials using user retention trends, feature adoption, and revenue attribution.</li>
-                    <li>Conduct due diligence on potential acquisition targets, including market sizing, financial modeling, and competitive analysis.</li>
-                    <li>Prepare reverse due diligence materials to assist investors (Insight, SoftBank, etc.) for portfolio company analyses.</li>
+                  <li>Own inorganic growth strategy and KPI calculations while reporting to the CFO.</li>
+                  <li>Build 3-year financial budget projections.</li>
+                  <li>Develop M&A models and investment theses which project retention, feature adoption, and revenue attribution.</li>
+                  <li>Lead end-to-end M&A diligence: market sizing, financial modeling, and competitive analysis.</li>
+                  <li>Prepare reverse due diligence materials to assist investors (Insight, SoftBank, etc.) for portfolio company analyses.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge variant="secondary">M&A</Badge>
@@ -143,7 +146,7 @@ export default function Professional() {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <ul className="list-disc pl-4 space-y-1">
-                    <li>Built a tutoring business with $3,000 in monthly recurring revenue by managing 90 client relationships and six contractors.</li>
+                    <li>Built a tutoring businessby managing 100+ client relationships and eight contractors.</li>
                     <li>Produced 5+ YouTube tutorials, boosting visibility and securing 18 glowing customer testimonials.</li>
                     <li>Managed finances while teaching bridge lessons, learning to prioritize customer needs and explain complicated concepts.</li>
                   </ul>
