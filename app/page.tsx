@@ -13,9 +13,7 @@ export default function Home() {
     <>
       <Script
         data-goatcounter="https://reekopp.goatcounter.com/count"
-        src="//gc.zgo.at/count.js"
-        strategy="afterInteractive"
-      />
+        async src="//gc.zgo.at/count.js"></Script>
       <Header />
       <main className="min-h-screen flex flex-col">
         <div className="container flex-grow flex flex-col py-12 md:py-24 space-y-12">
