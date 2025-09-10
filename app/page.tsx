@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/header";
 import { PhotoCarousel } from "@/components/photo-carousel";
 import { SocialLinks } from "@/components/social-links";
+import { WebringWidget } from "@/components/webring-widget";
 import 'react-multi-carousel/lib/styles.css';
 
 export default function Home() {
@@ -58,6 +59,8 @@ export default function Home() {
 
         <SocialLinks />
       </main>
+      
+      <WebringWidget />
     </>
   );
 }
