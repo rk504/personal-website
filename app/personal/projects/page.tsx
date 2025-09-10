@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { SocialLinks } from "@/components/social-links"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { UtterancesComments } from "@/components/utterances-comments"
 import { ExternalLink } from "lucide-react"
 
 export default function Projects() {
@@ -8,7 +9,7 @@ export default function Projects() {
     <>
       <Header />
       <main className="min-h-screen flex flex-col">
-        <div className="container flex-grow flex flex-col py-24 space-y-8">
+        <div className="container flex-grow flex flex-col py-24">
           <h1 className="text-4xl font-serif text-center mb-4">Projects</h1>
 
           <section>
@@ -25,7 +26,7 @@ export default function Projects() {
                   </CardHeader>
                   <CardContent>
                     <p>
-                    I built a self-hosted MVP covering the full user journey: signup/login + password reset, linked backend, Stripe payments, member portal, and linked RSVP-ready events + waitlists for a 1,700-member rollout and migration off Wix. This is the parent company of the 1700-member <a href="https://www.themediadinnerclub.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Media Dinner Club</a>.
+                    I built a self-hosted MVP covering the full user journey: signup/login + password reset, linked backend, Stripe payments, member portal, and linked RSVP-ready events + waitlists for a 1,700-member rollout and migration off Wix. O3P is the parent company of the <a href="https://www.themediadinnerclub.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Media Dinner Club</a>.
                     </p>
                   </CardContent>
                 </Card>
@@ -117,12 +118,14 @@ export default function Projects() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>Jeffrey and I made a podcast that is NOT a book club. Not worth your time, but still send me book recs.</p>
+                    <p>Jeffrey and I made a podcast that is NOT a book club. Not worth your time, but drop some book recs below.</p>
                   </CardContent>
                 </Card>
               </li>
             </ul>
           </section>
+
+          <UtterancesComments />
         </div>
         <SocialLinks />
       </main>

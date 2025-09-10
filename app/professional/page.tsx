@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { UtterancesComments } from "@/components/utterances-comments"
 import { Building2, GraduationCap, Briefcase, ExternalLink } from "lucide-react"
 import { SocialLinks } from "@/components/social-links"
 import Link from "next/link"
@@ -16,32 +17,50 @@ export default function Professional() {
             
             <div className="space-y-4 text-lg text-muted-foreground italic">
               <p>
-              I have a builder's mindset. I enjoy testing ideas through web dev, the most recent being a promo code LTV dashboard (others <s />
-              <a
-      href="/personal/projects"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="underline hover:text-primary"
-    >
-                here
-              </a>).
-              As the founder of Ace Bridge, I organically built a tutoring company of 8 teachers and 100+ students by understanding customer needs. 
-              As a product manager at Tricky Bridge, I increased user retention by diagnosing key issues. 
-              Now I lead corp dev at Copado.
+                By day, I lead corp dev at&nbsp; 
+                <a 
+                  href="https://www.copado.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="underline hover:text-primary"
+                >
+                  Copado
+                </a>, the #1 solution for enterprise-level Salesforce DevOps, testing automation, and AI.
+                By night, I build tools, the most recent being a promo code LTV dashboard (others&nbsp;
+                <a
+                  href="/personal/projects"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-primary"
+                >
+                  here
+                </a>).
+              </p>
+              
+              <p>
+                Previously, I navigated tight deadlines into the AMs on a 9-person, $2B AUM team at Partners; coached 100+ students while managing Ace Bridge's 8 teachers, finances, and brand; and built solutions to maximize retention for Tricky Bridge's 1M users learning 4M lessons. 
+                .
               </p>
 
               <p>
-                I enjoy playing bridge, melodica/sax/piano, and surge caps. I'm ranked 18th in New Orleans on Beli, where I torture my few followers with my thoughts. 
-                I worry the Saints/Pels seasons will be&nbsp;
-    <a
-      href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="underline hover:text-primary"
-    >
-                dumpster&nbsp;fires
-              </a>
-              .
+                I enjoy playing bridge, melodica/sax/piano, and&nbsp;
+                <a
+                  href="https://open.spotify.com/playlist/5a3Y1aUxAVX7EUnVq9ezYd?si=3c374ac258414659"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-primary"
+                >
+                New Orleans brass music.
+                </a>
+                &nbsp;I'm ranked 18th in New Orleans on Beli. Besides food, I mostly think about how the Saints/Pels seasons will be&nbsp;
+                <a
+                  href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-primary"
+                >
+                  dumpster&nbsp;fires
+                </a>.
               </p>  
             </div>
           </div>
@@ -245,6 +264,8 @@ export default function Professional() {
               </div>
             </div>
           </section>
+
+          <UtterancesComments />
         </div>
         
         <SocialLinks />

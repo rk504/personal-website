@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { SocialLinks } from "@/components/social-links"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { UtterancesComments } from "@/components/utterances-comments"
 import { ExternalLink, Heart } from "lucide-react"
 import { CleoLogo } from "@/components/logos/cleo-logo"
 import { LettaLogo } from "@/components/logos/letta-logo"
@@ -139,6 +140,8 @@ export default function Friends() {
               </p>
             </div> */}
           </section>
+
+          <UtterancesComments />
         </div>
         <SocialLinks />
       </main>

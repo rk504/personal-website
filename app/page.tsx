@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/header";
 import { PhotoCarousel } from "@/components/photo-carousel";
@@ -10,6 +11,11 @@ import 'react-multi-carousel/lib/styles.css';
 export default function Home() {
   return (
     <>
+      <Script
+        data-goatcounter="https://reekopp.goatcounter.com/count"
+        src="//gc.zgo.at/count.js"
+        strategy="afterInteractive"
+      />
       <Header />
       <main className="min-h-screen flex flex-col">
         <div className="container flex-grow flex flex-col py-12 md:py-24 space-y-12">
