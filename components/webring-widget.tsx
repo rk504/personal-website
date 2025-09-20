@@ -22,9 +22,7 @@ export function WebringWidget() {
           {/* Navigation Arrows */}
           <div className="flex items-center gap-1">
             <Link
-              href="https://ringdt.rapid.workers.dev/prev?from=reesekoppel.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://ringdt.rapid.workers.dev/prev?from=https://www.reesekoppel.com"
               className="p-1 hover:bg-gray-100 rounded transition-colors"
               title="Previous site"
             >
@@ -32,9 +30,7 @@ export function WebringWidget() {
             </Link>
 
             <Link
-              href="https://ringdt.rapid.workers.dev/next?from=reesekoppel.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://ringdt.rapid.workers.dev/next?from=https://www.reesekoppel.com"
               className="p-1 hover:bg-gray-100 rounded transition-colors"
               title="Next site"
             >
