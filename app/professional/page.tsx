@@ -34,23 +34,22 @@ export default function Professional() {
               </p>
 
               <p>
-              I enjoy building tools, the most recent being a legal time tracker (see this and others&nbsp;
+              I enjoy building&nbsp;
                 <a
                   href="/personal/projects"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-primary"
                 >
-                  here
-                </a>). I also like to play bridge, jam on the melodica/sax/piano, cycle (Strava 
-                  &nbsp;
+                  tools
+                </a>), the most recent being a legal time tracker. I also like to play bridge, jam on the melodica/sax/piano, cycle (Strava&nbsp;
                 <a
                   href="https://www.strava.com/athletes/122197702"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-primary"
                 >
-                here
+                 here
                 </a>), read David Foster Wallace, cook (4 Hour Chef), watch tennis (Goff, Pegula, FAA, Shelton), and listen to&nbsp;
                 <a
                   href="https://open.spotify.com/playlist/5a3Y1aUxAVX7EUnVq9ezYd?si=3c374ac258414659"
