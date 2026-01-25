@@ -36,7 +36,7 @@ export default function Professional() {
               <p>
               I like to&nbsp;
                 <a
-                  href="/personal/projects"
+                  href="/projects"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-primary"
