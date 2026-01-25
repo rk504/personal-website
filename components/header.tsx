@@ -66,9 +66,8 @@ export function Header() {
               className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase"
             >
               About Me
-            </button>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase flex items-center gap-1">
+             </button>
+            {/*  <DropdownMenuTrigger className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase flex items-center gap-1">
                 Personal <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-[200px]">
@@ -82,9 +81,18 @@ export function Header() {
                   <Link href="/personal/friends" className="w-full">My Friends</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
-            </DropdownMenu>
+            </DropdownMenu> */}
+            <Link href="/projects" className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase">
+              Projects
+            </Link>
             <Link href="/professional" className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase">
               Professional
+            </Link>
+            <Link href="/bridge" className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase">
+              Bridge
+            </Link>
+            <Link href="/friends" className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase">
+              My Friends' Startups
             </Link>
             <Link
               href="https://calendly.com/reesekoppel/15min?back=1"
