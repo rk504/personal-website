@@ -38,8 +38,7 @@ export default function Professional() {
               </p>
               
               <p>
-                Previously, I navigated tight deadlines into the AMs on a 9-person, $2B AUM team at Partners; coached 100+ students while managing Ace Bridge's 8 teachers, finances, and brand; and built solutions to maximize retention for Tricky Bridge's 1M users learning 4M lessons. 
-                .
+                Previously, I navigated tight deadlines into the AMs on a 9-person, $2B AUM team at Partners; coached 100+ students while managing Ace Bridge's 8 teachers, finances, and brand; and built solutions to maximize retention for Tricky Bridge's 1M users learning 4M lessons.
               </p>
 
               <p>
