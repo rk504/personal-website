@@ -25,7 +25,7 @@ export default function Professional() {
                   className="underline hover:text-primary"
                 >
                   Copado
-                </a>, the #1 solution for enterprise-level Salesforce DevOps, automated testing, and AI.
+                </a>, the #1 Salesforce-native DevOps, automated testing, and AI solution for enterprise-level customers.
                 By night, I build tools, the most recent being a legal time tracker (see this and others&nbsp;
                 <a
                   href="/personal/projects"
@@ -43,7 +43,7 @@ export default function Professional() {
               </p>
 
               <p>
-                I enjoy playing bridge, jamming on the melodica/sax/piano, cycling (Strava below), watching tennis (Mboko Goff Osaka, FAA Shelton and Carlos), cooking (4 Hour Chef), seeing live music, and listening to &nbsp;
+                I enjoy playing bridge, jamming on the melodica/sax/piano, cycling (Strava below), reading David Foster Wallace, cooking (4 Hour Chef), watching tennis (Mboko, Goff, FAA, Shelton),and listening to &nbsp;
                 <a
                   href="https://open.spotify.com/playlist/5a3Y1aUxAVX7EUnVq9ezYd?si=3c374ac258414659"
                   target="_blank"
