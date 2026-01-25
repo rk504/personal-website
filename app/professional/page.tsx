@@ -34,15 +34,15 @@ export default function Professional() {
               </p>
 
               <p>
-              I enjoy building&nbsp;
+              I like to&nbsp;
                 <a
                   href="/personal/projects"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-primary"
                 >
-                  tools
-                </a>), the most recent being a legal time tracker. I also like to play bridge, jam on the melodica/sax/piano, cycle (Strava&nbsp;
+                  build web apps
+                </a>, play bridge, jam on the melodica/sax/piano, cycle (Strava&nbsp;
                 <a
                   href="https://www.strava.com/athletes/122197702"
                   target="_blank"
@@ -57,9 +57,9 @@ export default function Professional() {
                   rel="noopener noreferrer"
                   className="underline hover:text-primary"
                 >
-                New Orleans brass music.
+                New Orleans brass music
                 </a>
-                &nbsp;I'm top 10 in New Orleans on Beli. I hate how the Saints/Pelicans are&nbsp;
+                &nbsp;. I'm top 10 in New Orleans on Beli. I hate how the Saints/Pelicans are&nbsp;
                 <a
                   href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
                   target="_blank"
