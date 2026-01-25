@@ -17,7 +17,7 @@ export default function Professional() {
             
             <div className="space-y-4 text-lg text-muted-foreground italic">
               <p>
-                By day, I lead corp dev at&nbsp; 
+                I lead corp dev at&nbsp; 
                 <a 
                   href="https://www.copado.com/" 
                   target="_blank" 
@@ -25,16 +25,8 @@ export default function Professional() {
                   className="underline hover:text-primary"
                 >
                   Copado
-                </a>, the #1 Salesforce-native DevOps, automated testing, and AI solution for enterprise-level customers.
-                By night, I build tools, the most recent being a legal time tracker (see this and others&nbsp;
-                <a
-                  href="/personal/projects"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-primary"
-                >
-                  here
-                </a>).
+                </a>, the intelligent AgentOps platform for Salesforce.
+                
               </p>
               
               <p>
@@ -42,7 +34,15 @@ export default function Professional() {
               </p>
 
               <p>
-                I enjoy playing bridge, jamming on the melodica/sax/piano, cycling (Strava 
+              I enjoy building tools, the most recent being a legal time tracker (see this and others&nbsp;
+                <a
+                  href="/personal/projects"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-primary"
+                >
+                  here
+                </a>). I also like to play bridge, jam on the melodica/sax/piano, cycle (Strava 
                   &nbsp;
                 <a
                   href="https://www.strava.com/athletes/122197702"
@@ -50,8 +50,8 @@ export default function Professional() {
                   rel="noopener noreferrer"
                   className="underline hover:text-primary"
                 >
-                  here
-                </a>), reading David Foster Wallace, cooking (4 Hour Chef), watching tennis (Mboko, Goff, FAA, Shelton),and listening to &nbsp;
+                here
+                </a>), read David Foster Wallace, cook (4 Hour Chef), watch tennis (Goff, Pegula, FAA, Shelton), and listen to&nbsp;
                 <a
                   href="https://open.spotify.com/playlist/5a3Y1aUxAVX7EUnVq9ezYd?si=3c374ac258414659"
                   target="_blank"
@@ -60,7 +60,7 @@ export default function Professional() {
                 >
                 New Orleans brass music.
                 </a>
-                &nbsp;I'm top 10 in New Orleans on Beli. I try to not think about how the Saints/Pelicans are&nbsp;
+                &nbsp;I'm top 10 in New Orleans on Beli. I hate how the Saints/Pelicans are&nbsp;
                 <a
                   href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
                   target="_blank"
