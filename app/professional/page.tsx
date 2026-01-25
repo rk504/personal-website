@@ -25,8 +25,8 @@ export default function Professional() {
                   className="underline hover:text-primary"
                 >
                   Copado
-                </a>, the #1 solution for enterprise-level Salesforce DevOps, testing automation, and AI.
-                By night, I build tools, the most recent being a promo code LTV dashboard (others&nbsp;
+                </a>, the #1 solution for enterprise-level Salesforce DevOps, automated testing, and AI.
+                By night, I build tools, the most recent being a legal time tracker (see this and others&nbsp;
                 <a
                   href="/personal/projects"
                   target="_blank"
@@ -43,7 +43,7 @@ export default function Professional() {
               </p>
 
               <p>
-                I enjoy playing bridge, melodica/sax/piano, and&nbsp;
+                I enjoy playing bridge, jamming on the melodica/sax/piano, cycling (Strava below), watching tennis (Mboko Goff Osaka, FAA Shelton and Carlos), cooking (4 Hour Chef), seeing live music, and listening to &nbsp;
                 <a
                   href="https://open.spotify.com/playlist/5a3Y1aUxAVX7EUnVq9ezYd?si=3c374ac258414659"
                   target="_blank"
@@ -52,7 +52,7 @@ export default function Professional() {
                 >
                 New Orleans brass music.
                 </a>
-                &nbsp;I'm ranked 18th in New Orleans on Beli. Besides food, I mostly think about how the Saints/Pels seasons will be&nbsp;
+                &nbsp;I'm top 10 in New Orleans on Beli. I try to not think about how the Saints/Pelicans are&nbsp;
                 <a
                   href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
                   target="_blank"
@@ -94,16 +94,13 @@ export default function Professional() {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <ul className="list-disc pl-4 space-y-1">
-                  <li>Own inorganic growth strategy and KPI calculations while reporting to the CFO.</li>
-                  <li>Build 3-year financial budget projections.</li>
-                  <li>Develop M&A models and investment theses to project retention, feature adoption, and revenue attribution.</li>
+                  <li>Own inorganic growth strategy and KPI/revenue calculations for internal and external parties.</li>
                   <li>Lead end-to-end M&A diligence: market sizing, financial modeling, and competitive analysis.</li>
                   <li>Prepare reverse due diligence materials to assist investors (Insight, SoftBank, etc.) for portfolio company analyses.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge variant="secondary">M&A</Badge>
-                    <Badge variant="secondary">Corporate Strategy</Badge>
-                    <Badge variant="secondary">Financial Modeling</Badge>
+                    <Badge variant="secondary">Revenue Operations</Badge>
                     <Badge variant="secondary">Due Diligence</Badge>
                   </div>
                 </CardContent>
@@ -131,9 +128,9 @@ export default function Professional() {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <ul className="list-disc pl-4 space-y-1">
-                    <li>Secured a $110M top-up for an existing client, the largest of 2024, by developing a customized illiquid commitment model that optimized portfolio risk-return balance tailored to the client's liquidity constraints.</li>
-                    <li>Won the office's first new client in two years ($200M) by leading pitch development, creating 38% of the materials, and driving the client onboarding process.</li>
-                    <li>Increased efficiency by implementing SharePoint as the office's central hub, saving the team 10+ hours per week.</li>
+                    <li>Secured a $110M top-up for an existing HNW client, the largest of 2024, by developing a customized illiquid commitment model that optimized portfolio risk-return balance tailored to the client's liquidity constraints.</li>
+                    <li>Won the office's first new client in two years ($200M endowment) by leading pitch development, creating 38% of the materials, and driving the client onboarding process.</li>
+                    <li>Increased team efficiency by implementing SharePoint as the office's central hub, saving the team 10+ hours per week and eliminating fears of losing files.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge variant="secondary">Analytical Skills</Badge>
@@ -160,7 +157,7 @@ export default function Professional() {
                         </Link>
                       </p>
                     </div>
-                    <Badge>March 2020 - July 2023</Badge>
+                    <Badge>March 2020 - Present</Badge>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
@@ -231,7 +228,7 @@ export default function Professional() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p>Activities: Bridge Club (Founder), Whaling Crew (President), Title IX Advisory Board, Entrepreneurial Society, Chess Club, Peer Wellness Cultivator</p>
+                <p>Activities: Bridge Club (Founder), Whaling Crew, Title IX Advisory Board, Entrepreneurial Society, Chess Club, Peer Wellness Cultivator, LEO</p>
               </CardContent>
             </Card>
           </section>
