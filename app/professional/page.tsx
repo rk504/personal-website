@@ -42,7 +42,16 @@ export default function Professional() {
               </p>
 
               <p>
-                I enjoy playing bridge, jamming on the melodica/sax/piano, cycling (Strava below), reading David Foster Wallace, cooking (4 Hour Chef), watching tennis (Mboko, Goff, FAA, Shelton),and listening to &nbsp;
+                I enjoy playing bridge, jamming on the melodica/sax/piano, cycling (Strava 
+                  &nbsp;
+                <a
+                  href="https://www.strava.com/athletes/122197702"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-primary"
+                >
+                  here
+                </a>), reading David Foster Wallace, cooking (4 Hour Chef), watching tennis (Mboko, Goff, FAA, Shelton),and listening to &nbsp;
                 <a
                   href="https://open.spotify.com/playlist/5a3Y1aUxAVX7EUnVq9ezYd?si=3c374ac258414659"
                   target="_blank"
