@@ -50,7 +50,7 @@ export default function Professional() {
                   className="underline hover:text-primary"
                 >
                  here
-                </a>), read David Foster Wallace, cook (4 Hour Chef), watch tennis (Goff, Pegula, FAA, Shelton), and listen to&nbsp;
+                </a>), read David Foster Wallace, cook (4 Hour Chef), watch tennis (Goff, Pegula, FAA, Paul), and listen to&nbsp;
                 <a
                   href="https://open.spotify.com/playlist/5a3Y1aUxAVX7EUnVq9ezYd?si=3c374ac258414659"
                   target="_blank"
