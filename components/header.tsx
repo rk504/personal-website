@@ -72,13 +72,13 @@ export function Header() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-[200px]">
                 <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/projects" className="w-full">Projects</Link>
+                  <Link href="/projects" className="w-full">Projects</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/bridge" className="w-full">Bridge</Link>
+                  <Link href="/bridge" className="w-full">Bridge</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="uppercase text-sm">
-                  <Link href="/personal/friends" className="w-full">My Friends</Link>
+                  <Link href="/friends" className="w-full">My Friends</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu> */}
@@ -151,29 +151,29 @@ export function Header() {
           <div>
             <div className="block w-full text-left text-lg font-medium hover:text-gray-600">Personal</div>
             <div className="pl-4 py-2">
-              <Link 
-                href="/personal/projects" 
+              <Link
+                href="/projects"
                 className="block text-lg hover:text-gray-600 py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Projects
               </Link>
-{/*               <Link 
-                href="/personal/learning" 
+{/*               <Link
+                href="/learning"
                 className="block text-lg hover:text-gray-600 py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Learning
               </Link> */}
-              <Link 
-                href="/personal/bridge" 
+              <Link
+                href="/bridge"
                 className="block text-lg hover:text-gray-600 py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Bridge
               </Link>
-              <Link 
-                href="/personal/friends" 
+              <Link
+                href="/friends"
                 className="block text-lg hover:text-gray-600 py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
