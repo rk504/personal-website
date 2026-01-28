@@ -1,8 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ChevronDown, Menu, X } from "lucide-react"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function Header() {
