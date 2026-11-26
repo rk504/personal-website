@@ -7,6 +7,11 @@ import { CleoLogo } from "@/components/logos/cleo-logo"
 import { LettaLogo } from "@/components/logos/letta-logo"
 import { BNBCalcLogo } from "@/components/logos/bnbcalc-logo"
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export default function Friends() {
   return (
     <>
