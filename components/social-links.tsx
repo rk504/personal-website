@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import { Linkedin, Spade, Bike, LibraryBig } from "lucide-react"
+import posthog from "posthog-js"
 
 export function SocialLinks() {
   return (
@@ -10,6 +13,7 @@ export function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
+          onClick={() => posthog.capture("social_profile_opened", { destination: "linkedin" })}
         >
           <Linkedin size={24} />
           <span className="sr-only">LinkedIn</span>
@@ -20,6 +24,7 @@ export function SocialLinks() {
            target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
+          onClick={() => posthog.capture("social_profile_opened", { destination: "goodreads" })}
         >
           <LibraryBig size={24} />
           <span className="sr-only">Books</span>
@@ -29,6 +34,7 @@ export function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
+          onClick={() => posthog.capture("social_profile_opened", { destination: "ace_bridge" })}
         >
           <Spade size={24} />
           <span className="sr-only">Ace Bridge</span>
@@ -38,6 +44,7 @@ export function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
+          onClick={() => posthog.capture("social_profile_opened", { destination: "strava" })}
         >
           <Bike size={24} />
           <span className="sr-only">Strava</span>

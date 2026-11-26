@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import posthog from "posthog-js"
 
 export function PhotoCarousel() {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0)
@@ -24,6 +25,15 @@ export function PhotoCarousel() {
     return () => clearInterval(interval)
   }, [photos])
 
+  const navigateCarousel = (direction: "next" | "previous") => {
+    setCurrentPhotoIndex((prevIndex) =>
+      direction === "next"
+        ? (prevIndex + 1) % photos.length
+        : (prevIndex - 1 + photos.length) % photos.length,
+    )
+    posthog.capture("carousel_navigation", { direction })
+  }
+
   if (photos.length === 0) {
     return null // Or a loading state
   }
@@ -39,7 +49,7 @@ export function PhotoCarousel() {
               aria-label="Previous photo"
               className="absolute left-0 z-10 p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
               style={{ top: '50%', transform: 'translateY(-50%)' }}
-              onClick={() => setCurrentPhotoIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length)}
+              onClick={() => navigateCarousel("previous")}
             >
               <span style={{ fontSize: '2rem', lineHeight: 1 }}>&larr;</span>
             </button>
@@ -58,7 +68,7 @@ export function PhotoCarousel() {
               aria-label="Next photo"
               className="absolute right-0 z-10 p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
               style={{ top: '50%', transform: 'translateY(-50%)' }}
-              onClick={() => setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length)}
+              onClick={() => navigateCarousel("next")}
             >
               <span style={{ fontSize: '2rem', lineHeight: 1 }}>&rarr;</span>
             </button>

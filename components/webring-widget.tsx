@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react"
+import posthog from "posthog-js"
 
 export function WebringWidget() {
   return (
@@ -14,6 +15,7 @@ export function WebringWidget() {
             target="_blank" 
             rel="noopener noreferrer"
             className="text-xs font-semibold text-gray-700 hover:text-gray-900 transition-colors flex items-center gap-1"
+            onClick={() => posthog.capture("webring_navigation", { destination: "webring_repository" })}
           >
             WEBRING
             <ExternalLink className="h-3 w-3" />
@@ -25,6 +27,7 @@ export function WebringWidget() {
               href="https://ringdt.rapid.workers.dev/prev?from=https://www.reesekoppel.com"
               className="p-1 hover:bg-gray-100 rounded transition-colors"
               title="Previous site"
+              onClick={() => posthog.capture("webring_navigation", { destination: "previous_site" })}
             >
               <ChevronLeft className="h-4 w-4 text-gray-600" />
             </Link>
@@ -33,6 +36,7 @@ export function WebringWidget() {
               href="https://ringdt.rapid.workers.dev/next?from=https://www.reesekoppel.com"
               className="p-1 hover:bg-gray-100 rounded transition-colors"
               title="Next site"
+              onClick={() => posthog.capture("webring_navigation", { destination: "next_site" })}
             >
               <ChevronRight className="h-4 w-4 text-gray-600" />
             </Link>

@@ -1,10 +1,17 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { SocialLinks } from "@/components/social-links"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { UtterancesComments } from "@/components/utterances-comments"
 import { ExternalLink } from "lucide-react"
+import posthog from "posthog-js"
 
 export default function Projects() {
+  const captureProjectLink = (projectName: string) => {
+    posthog.capture("project_link_opened", { project_name: projectName })
+  }
+
   return (
     <>
       <Header />
@@ -19,14 +26,14 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
-                      <a href="https://our-third-place.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://our-third-place.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={() => captureProjectLink("our_third_place")}>
                         Our Third Place <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p>
-                    I built a self-hosted MVP covering the full user journey: signup/login + password reset, linked backend, Stripe payments, member portal, and linked RSVP-ready events + waitlists for a 1,700-member rollout and migration off Wix. O3P is the parent company of the <a href="https://www.themediadinnerclub.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Media Dinner Club</a>.
+                    I built a self-hosted MVP covering the full user journey: signup/login + password reset, linked backend, Stripe payments, member portal, and linked RSVP-ready events + waitlists for a 1,700-member rollout and migration off Wix. O3P is the parent company of the <a href="https://www.themediadinnerclub.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline" onClick={() => captureProjectLink("media_dinner_club")}>Media Dinner Club</a>.
                     </p>
                   </CardContent>
                 </Card>
@@ -35,7 +42,7 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
-                      <a href="https://seepg.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://seepg.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={() => captureProjectLink("seepg")}>
                         Seepg <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
@@ -49,7 +56,7 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
-                      <a href="https://easyvol.netlify.app/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://easyvol.netlify.app/" target="_blank" rel="noopener noreferrer" onClick={() => captureProjectLink("easyvol")}>
                         EasyVol <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
@@ -63,7 +70,7 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
-                      <a href="https://github.com/rk504" target="_blank" rel="noopener noreferrer">
+                      <a href="https://github.com/rk504" target="_blank" rel="noopener noreferrer" onClick={() => captureProjectLink("github")}>
                         GitHub <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
@@ -98,7 +105,7 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
-                      <a href="https://bsky.app/profile/pels504.bsky.social" target="_blank" rel="noopener noreferrer">
+                      <a href="https://bsky.app/profile/pels504.bsky.social" target="_blank" rel="noopener noreferrer" onClick={() => captureProjectLink("nba_data_analysis")}>
                         NBA Data Analysis <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
@@ -112,7 +119,7 @@ export default function Projects() {
                 <Card>
                   <CardHeader>
                     <CardTitle>
-                      <a href="https://open.spotify.com/show/7lZeZrEoBKmlsjUAe8qTh8" target="_blank" rel="noopener noreferrer">
+                      <a href="https://open.spotify.com/show/7lZeZrEoBKmlsjUAe8qTh8" target="_blank" rel="noopener noreferrer" onClick={() => captureProjectLink("read_receipts")}>
                         Read Receipts <ExternalLink className="inline h-4 w-4" />
                       </a>
                     </CardTitle>
