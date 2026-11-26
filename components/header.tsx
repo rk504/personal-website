@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
+import posthog from "posthog-js"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -43,7 +44,17 @@ export function Header() {
   }, [])
 
   const openEmailDraft = () => {
+    if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+      posthog.capture("contact_email_clicked")
+    }
+
     window.location.href = "mailto:me@reesekoppel.com?subject=Contact from Website"
+  }
+
+  const trackMeetingSchedulingClick = () => {
+    if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+      posthog.capture("meeting_scheduling_clicked")
+    }
   }
 
   return (
@@ -96,6 +107,7 @@ export function Header() {
             <Link
               href="https://calendly.com/reesekoppel/15min?back=1"
               className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
+              onClick={trackMeetingSchedulingClick}
             >
               Calendly
             </Link>
@@ -193,7 +205,10 @@ export function Header() {
             <Link
               href="https://calendly.com/rk-copado"
               className="block text-center text-lg font-medium bg-gray-100 hover:bg-gray-200 py-3 rounded-lg"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                trackMeetingSchedulingClick()
+                setIsMobileMenuOpen(false)
+              }}
             >
               Schedule Meeting
             </Link>
