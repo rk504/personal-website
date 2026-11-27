@@ -19,8 +19,8 @@ export function SocialLinks() {
           <span className="sr-only">LinkedIn</span>
         </Link>
         <Link
-      //    href="https://reesentlyread.blogspot.com/"
-           href="https://www.goodreads.com/user/show/79282113-reese"
+          href="https://reesentlyread.blogspot.com/"
+    //       href="https://www.goodreads.com/user/show/79282113-reese"
            target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
