@@ -49,7 +49,7 @@ export default function Home() {
           <div id="about" className="space-y-4 max-w-2xl mx-auto text-center">
             <h1 className="text-4xl font-serif">Greetings</h1>
             <p className="text-lg text-muted-foreground">
-              I'm Reese. I'm a founder, investor, operator, bridge player, background actor, podcaster, foodie, aspiring triathlete & DJ, and a New Orleanian. I'm a rational hedonist and a strong advocate of having fun with loved ones.
+              I'm a founder, investor, operator, bridge player, background actor, podcaster, foodie, aspiring triathlete & DJ, and a New Orleanian. I'm a rational hedonist and a strong advocate of having fun with loved ones.
               {/* I like to tinker, to connect with others, to connect others, and to help others */}
             {/* I'm Reese. I build <Link href="/projects" className="underline text-blue-600 hover:text-blue-800">websites</Link> that bring people together so we can make the most of our   */}
   {/*           <s />

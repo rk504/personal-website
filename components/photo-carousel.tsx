@@ -43,11 +43,11 @@ export function PhotoCarousel() {
       <div className="container">
         <h2 className="text-3xl font-serif mb-8 text-center">Photo Gallery</h2>
         <div className="relative max-w-3xl mx-auto">
-          <div className="relative w-full h-full flex items-center justify-center">
+          <div className="relative w-full h-[500px] flex items-center justify-center">
             {/* Left Arrow */}
             <button
               aria-label="Previous photo"
-              className="absolute left-0 z-10 p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
+              className="absolute left-2 z-10 p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
               style={{ top: '50%', transform: 'translateY(-50%)' }}
               onClick={() => navigateCarousel("previous")}
             >
@@ -57,17 +57,15 @@ export function PhotoCarousel() {
             <Image
               src={photos[currentPhotoIndex]}
               alt={`Photo ${currentPhotoIndex + 1}`}
-              width={800}
-              height={600}
-              className="object-contain max-h-[600px] rounded-lg"
-              style={{ width: 'auto', height: 'auto' }}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
               priority
             />
             {/* Right Arrow */}
             <button
               aria-label="Next photo"
-              className="absolute right-0 z-10 p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
-              style={{ top: '50%', transform: 'translateY(-50%)' }}
+              className="absolute right-2 z-10 p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
               onClick={() => navigateCarousel("next")}
             >
               <span style={{ fontSize: '2rem', lineHeight: 1 }}>&rarr;</span>
