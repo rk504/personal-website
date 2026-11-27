@@ -2,6 +2,8 @@ import { SeverityNumber } from '@opentelemetry/api-logs'
 import { OTLPLogExporter } from '@opentelemetry/exporter-logs-otlp-http'
 import { resourceFromAttributes } from '@opentelemetry/resources'
 import { BatchLogRecordProcessor, LoggerProvider } from '@opentelemetry/sdk-logs'
+import { createOnRequestError } from '@posthog/next'
+import { getPostHogServer } from '@/lib/posthog-server'
 
 const token = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN
 const host = process.env.NEXT_PUBLIC_POSTHOG_HOST
@@ -38,6 +40,7 @@ export const posthogLog = loggerProvider?.getLogger('posthog-exporter')
 
 export function register() {
   if (process.env.NEXT_RUNTIME === 'nodejs') {
+    getPostHogServer()
     posthogLog?.emit({
       body: 'PostHog log exporter initialized',
       severityNumber: SeverityNumber.INFO,
@@ -45,3 +48,7 @@ export function register() {
     })
   }
 }
+
+export const onRequestError = token && host
+  ? createOnRequestError({ apiKey: token, host })
+  : async () => {}
