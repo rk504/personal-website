@@ -100,7 +100,7 @@ export function Header() {
               My Friends' Startups
             </Link>
             <Link
-              href="https://calendly.com/reesekoppel/15min?back=1"
+              href="https://calendly.com/reesekoppel/15"
               onClick={openScheduling}
               className="text-sm tracking-wide hover:text-gray-600 transition-colors uppercase border border-gray-300 px-4 py-2 rounded hover:bg-gray-50"
             >
