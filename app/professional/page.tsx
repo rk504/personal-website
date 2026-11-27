@@ -54,7 +54,7 @@ export default function Professional() {
                   className="underline hover:text-primary"
                 >
                  cycle
-                </a>), read David Foster Wallace, cook (4 Hour Chef), watch tennis (Goff, Pegula, FAA, Paul), and listen to&nbsp;
+                </a>), read David Foster Wallace, cook, watch tennis (Goff, Pegula, FAA, Paul), and listen to&nbsp;
                 <a
                   href="https://open.spotify.com/playlist/5a3Y1aUxAVX7EUnVq9ezYd?si=3c374ac258414659"
                   target="_blank"
@@ -63,7 +63,7 @@ export default function Professional() {
                 >
                 New Orleans brass music
                 </a>
-                &nbsp;. I'm top 10 in New Orleans on Beli. I hate how the Saints/Pelicans are&nbsp;
+                . I'm top 10 in New Orleans on Beli. I'd rather not discuss how the Saints/Pelicans are perpetual&nbsp;
                 <a
                   href="https://www.youtube.com/watch?v=fVU833yKiUc&ab_channel=ESPN"
                   target="_blank"
